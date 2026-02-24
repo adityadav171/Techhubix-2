@@ -52,6 +52,7 @@
   margin: 0 0 20px 0;
   line-height: 1.2;
   animation: slideUp 0.6s ease;
+  color:#fff;
 }
 
 .service-tagline {
@@ -59,6 +60,7 @@
   opacity: 0.95;
   margin: 0;
   animation: slideUp 0.6s ease 0.1s backwards;
+  color:#fff;
 }
 
 /* Overview Section */
@@ -305,17 +307,13 @@
   text-align: center;
 }
 
-.process-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
+
 
 .process-step {
   display: flex;
   gap: 30px;
   position: relative;
-  padding-bottom: 40px;
+ 
 }
 
 .step-number {
@@ -353,9 +351,7 @@
   background: #e0e0e0;
 }
 
-.process-step:last-child {
-  padding-bottom: 0;
-}
+
 
 .process-step:last-child .step-connector {
   display: none;

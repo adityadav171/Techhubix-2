@@ -42,6 +42,7 @@
   font-size: clamp(2rem, 8vw, 3.5rem);
   font-weight: 700;
   margin: 0 0 20px 0;
+  color:#fff;
   animation: slideUp 0.6s ease 0.1s backwards;
 }
 
@@ -50,6 +51,7 @@
   opacity: 0.95;
   margin: 0;
   line-height: 1.6;
+  color:#fff;
   animation: slideUp 0.6s ease 0.2s backwards;
 }
 
@@ -193,7 +195,7 @@
   background: linear-gradient(135deg, var(--dark) 0%, #1a1e3f 100%);
   color: white;
   padding: clamp(60px, 10vw, 100px) 20px;
-  margin-top: 80px;
+  
   position: relative;
   overflow: hidden;
 }
@@ -271,7 +273,7 @@
   color: white;
   padding: clamp(50px, 8vw, 80px) 20px;
   text-align: center;
-  margin-top: 80px;
+  
   position: relative;
   overflow: hidden;
 }

@@ -1,12 +1,10 @@
 .section-h {
   padding: 80px 40px;
-  max-width: 1440px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
-.about-section-h {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(20, 184, 166, 0.05));
-}
+
 
 .about-container-h {
   display: flex;

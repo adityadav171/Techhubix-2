@@ -386,10 +386,11 @@
 
 .member-names {
   text-align: center;
+  margin-top:10px;
   font-weight: 700;
   color: var(--dark);
   font-size: 1.1rem;
-  margin: 0;
+  
 }
 
 .member-role {
@@ -406,6 +407,7 @@
   color: var(--gray-600);
   font-size: 0.9rem;
   margin-top: 10px;
+  margin-bottom:20px;
   line-height: 1.5;
 }
 

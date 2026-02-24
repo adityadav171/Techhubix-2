@@ -66,9 +66,7 @@ const Header = () => {
               {/* Services Menu with Mega Menu */}
               <li className="js-menu">
                 <Link to="/services">Services</Link>
-                <span className="menu-toggle arrow-toggle" onClick={handleMenuToggle}>
-                  ▾
-                </span>
+               
 
                 <div className="mega-menu services-mega">
                   <div className="services-column">
