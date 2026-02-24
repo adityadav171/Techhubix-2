@@ -1,0 +1,30 @@
+.ab2-hero {
+  margin-top: 0 !important;
+  padding-top: 40px !important;
+  padding: 20px 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.ab2-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.ab2-right img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 102, 255, 0.2);
+}
+.ab2-container .ab2-left h1 {
+  margin-top: 0;
+}
+@media (max-width: 900px) {
+  .ab2-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .ab2-container .ab2-left h1 {
+    font-size: 35px;
+  }
+}

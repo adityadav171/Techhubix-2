@@ -1,0 +1,25 @@
+section.ab2-features {
+  padding: 80px 10%;
+  text-align: center;
+}
+.ab2-features h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+.ab2-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.ab2-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0px 5px 12px 7px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+.ab2-box h4 {
+  font-size: 20px;
+  margin-top: 0;
+}

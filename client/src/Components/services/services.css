@@ -1,0 +1,138 @@
+.section-h {
+  padding: 80px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section-title-h {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--dark);
+}
+
+.elementor-kit-8 p {
+  margin-block-end: 50px;
+}
+
+.section-subtitle-h {
+  text-align: center;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  color: var(--gray-600);
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.8;
+}
+
+.services-container-h {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.service-item-h {
+  background: linear-gradient(135deg, var(--white), rgba(99, 102, 241, 0.02));
+  border-radius: 16px;
+  padding: 40px 25px;
+  border: 1.5px solid var(--gray-200);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-sm);
+  min-height: 320px;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-item-h:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.service-icon-h {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1;
+  border: none;
+  border-bottom: none;
+}
+
+.service-item-h:hover .service-icon-h {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border: none;
+  border-bottom: none;
+}
+
+.service-item-h svg {
+  font-size: 48px;
+  margin-bottom: 20px;
+  fill: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.service-item-h:hover svg {
+  fill: var(--secondary);
+  transform: scale(1.1);
+}
+
+.service-item-h svg path {
+  fill: inherit;
+}
+
+.service-item-h h4 {
+  color: var(--dark);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
+
+.service-item-h p {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .section-h {
+    padding: 60px 20px;
+  }
+
+  .services-container-h {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .service-item-h {
+    padding: 30px 20px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-h {
+    padding: 50px 15px;
+  }
+
+  .services-container-h {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-item-h {
+    padding: 25px 15px;
+  }
+
+  .service-item-h svg {
+    font-size: 40px;
+  }
+}

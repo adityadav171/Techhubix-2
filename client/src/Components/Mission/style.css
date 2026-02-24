@@ -1,0 +1,17 @@
+.ab2-mission {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.ab2-mission .ab2-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 10%;
+}
+.ab2-mission-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+}

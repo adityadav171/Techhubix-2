@@ -1,0 +1,391 @@
+/**
+ * Blogs Page Styling
+ * Modern blog layout with featured section, filtering, and search
+ */
+
+.blogs-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Hero Section */
+.blogs-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  animation: fadeInDown 0.6s ease;
+}
+
+.blogs-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blogs-title {
+  font-size: 52px;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  animation: slideUp 0.6s ease 0.1s backwards;
+}
+
+.blogs-subtitle {
+  font-size: 18px;
+  opacity: 0.95;
+  margin: 0;
+  animation: slideUp 0.6s ease 0.2s backwards;
+}
+
+/* Featured Section */
+.featured-section {
+  padding: 60px 20px;
+  background: #f8f9ff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.featured-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.featured-item {
+  animation: slideUp 0.6s ease;
+}
+
+/* Main Content */
+.blogs-content {
+  padding: 60px 20px;
+}
+
+.blogs-content .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Filter Section */
+.blogs-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* Search Bar */
+.blogs-search {
+  position: relative;
+  animation: fadeIn 0.6s ease 0.3s backwards;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 16px 14px 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  background-color: #f8f9ff;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+/* Category Filters */
+.category-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  animation: fadeIn 0.6s ease 0.4s backwards;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 2px solid #e0e0e0;
+  background: #ffffff;
+  color: #666;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Results Info */
+.results-info {
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 14px;
+  animation: fadeIn 0.6s ease 0.5s backwards;
+}
+
+.count {
+  font-weight: 700;
+  color: #667eea;
+}
+
+/* Blogs Grid */
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  animation: fadeIn 0.6s ease 0.6s backwards;
+}
+
+.blogs-grid.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.grid-item {
+  animation: slideUp 0.5s ease;
+}
+
+/* No Blogs State */
+.no-blogs {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.no-blogs-text {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.reset-btn {
+  padding: 12px 24px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+}
+
+.newsletter-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-content h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  animation: slideUp 0.6s ease 0.1s backwards;
+}
+
+.newsletter-content p {
+  font-size: 16px;
+  opacity: 0.95;
+  margin: 0 0 30px 0;
+  animation: slideUp 0.6s ease 0.2s backwards;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  gap: 12px;
+  animation: slideUp 0.6s ease 0.3s backwards;
+}
+
+.email-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.email-input:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-btn {
+  padding: 14px 32px;
+  background: #ffffff;
+  color: #667eea;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blogs-hero {
+    padding: 60px 20px;
+  }
+
+  .blogs-title {
+    font-size: 36px;
+  }
+
+  .blogs-subtitle {
+    font-size: 16px;
+  }
+
+  .blogs-content {
+    padding: 40px 20px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blogs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .category-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .newsletter-section {
+    padding: 60px 20px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 28px;
+  }
+
+  .newsletter-content p {
+    font-size: 14px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .blogs-title {
+    font-size: 28px;
+  }
+
+  .blogs-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
