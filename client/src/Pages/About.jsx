@@ -160,25 +160,25 @@ const About = () => {
           <div className="team-grid">
             <div className="team-member">
               <div className="member-avatar">👨‍💼</div>
-              <h3>John Smith</h3>
+              <h3 className='member-names'>John Smith</h3>
               <p className="member-role">Founder & Lead Developer</p>
               <p className="member-bio">Full stack expert with 8+ years of experience in web development.</p>
             </div>
             <div className="team-member">
               <div className="member-avatar">👩‍💻</div>
-              <h3>Sarah Johnson</h3>
+              <h3 className='member-names'>Sarah Johnson</h3>
               <p className="member-role">Creative Director</p>
               <p className="member-bio">Design specialist creating beautiful, functional user experiences.</p>
             </div>
             <div className="team-member">
               <div className="member-avatar">👨‍🔧</div>
-              <h3>Michael Chen</h3>
+              <h3 className='member-names'>Michael Chen</h3>
               <p className="member-role">HubSpot Specialist</p>
               <p className="member-bio">Expert in CRM automation and marketing integration solutions.</p>
             </div>
             <div className="team-member">
               <div className="member-avatar">👩‍📊</div>
-              <h3>Emma Williams</h3>
+              <h3 className='member-names'>Emma Williams</h3>
               <p className="member-role">Digital Marketing Strategist</p>
               <p className="member-bio">Data-driven marketer focused on measurable business growth.</p>
             </div>
