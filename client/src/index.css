@@ -204,3 +204,24 @@ button.btn-secondary:hover {
     padding: 0 15px;
   }
 }
+
+a {
+    text-decoration: none !important;
+}
+.contact-list li {
+    align-items: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.tech-grid {
+    justify-content: center;
+}
+
+.footer-section {
+    margin: 0;
+}

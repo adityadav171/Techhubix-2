@@ -325,6 +325,11 @@
 }
 
 /* Team Section */
+.team-intro{
+  padding-bottom: 10px;
+  max-width: 100%;
+  text-align: center;
+}
 .team-section {
   padding: clamp(60px, 10vw, 100px) 20px;
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
@@ -411,6 +416,7 @@
 }
 
 .why-choose .container {
+  padding: 10px;
   max-width: 1300px;
   margin: 0 auto;
 }
