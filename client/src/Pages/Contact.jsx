@@ -313,7 +313,7 @@ const Contact = () => {
               </div>
 
               {/* Quick Links */}
-              <div className="quick-links">
+              {/* <div className="quick-links">
                 <h3>Quick Links</h3>
                 <ul>
                   <li><a href="/services">Our Services</a></li>
@@ -321,10 +321,10 @@ const Contact = () => {
                   <li><a href="/blogs">Blog & Resources</a></li>
                   <li><a href="/about">About Us</a></li>
                 </ul>
-              </div>
+              </div> */}
 
               {/* Response Time */}
-              <div className="response-info">
+              {/* <div className="response-info">
                 <div className="response-badge">
                   <span className="badge-icon">⚡</span>
                   <div>
@@ -332,7 +332,7 @@ const Contact = () => {
                     <p>We typically respond within 24 hours</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

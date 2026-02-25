@@ -76,7 +76,7 @@ h1 {
   font-size: clamp(2rem, 8vw, 3.5rem);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--dark);
+  color: #fff;
 }
 
 h2 {
@@ -84,17 +84,17 @@ h2 {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--dark);
+  color: #fff;
 }
 
 h3 {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 600;
-  color: var(--dark);
+  color: #fff;
 }
 
 p {
-  color: var(--gray-600);
+  color: #fff;
   font-size: clamp(0.9rem, 2vw, 1.025rem);
   line-height: 1.7;
 }
