@@ -219,7 +219,7 @@ a {
 }
 
 .footer-section {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .why-us-section {
@@ -307,6 +307,7 @@ a {
 .why-us-section h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #fff;;
 }
 
 .process-timeline {
@@ -356,5 +357,25 @@ a {
 .th-header nav.th-nav {
     margin-left: auto !important;
     margin-right: 10px!important;
+}
+}
+
+
+
+@media (max-width: 800px){
+.features-grid{
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+}
+
+@media (max-width: 700px){
+    .process-timeline {
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+@media (max-width: 576px){
+.features-grid{
+    grid-template-columns: repeat(1, 1fr) !important;
 }
 }

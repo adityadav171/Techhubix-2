@@ -138,7 +138,7 @@
 
 .filter-btn:hover {
   border-color: #667eea;
-  color: #667eea;
+  color: #fff;
 }
 
 .filter-btn.active {
@@ -159,6 +159,10 @@
 .count {
   font-weight: 700;
   color: #667eea;
+}
+
+.results-info p{
+  color:#1a1a1a;
 }
 
 /* Blogs Grid */
