@@ -307,7 +307,7 @@ a {
 .why-us-section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #fff;;
+    color:#000;
 }
 
 .process-timeline {
@@ -378,4 +378,12 @@ a {
 .features-grid{
     grid-template-columns: repeat(1, 1fr) !important;
 }
+}
+
+section.section-h.cta-section-h {
+    max-width: 100%;
+}
+.services-benefits h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
