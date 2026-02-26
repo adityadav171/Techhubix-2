@@ -3,39 +3,39 @@ import "./Faq.css"; // your existing CSS
 
 const faqsData = [
   {
-    question: "What services does Array Blocks offer?",
+    question: "What services does TechHubbix offer?",
     answer:
-      "We specialize in smart contract development, DeFi platforms, MLM systems, token ICO launches, exchange listings (CMC, CG), and comprehensive digital marketing solutions.",
+      "TechHubbix specializes in HubSpot development, full-stack web applications, Shopify store development, CRM automation, and data-driven digital marketing solutions.",
   },
   {
-    question: "Does Array Blocks offer Web3 development services?",
+    question: "Do you provide custom software development?",
     answer:
-      "Yes. Array Blocks offers complete Web3 development services, including blockchain-based applications, smart contracts, decentralized platforms, and custom Web3 solutions tailored to business needs.",
+      "Yes. We build scalable and secure custom web applications tailored to your business needs using modern full-stack technologies.",
+  },
+  {
+    question: "Can TechHubbix help with HubSpot CRM setup and automation?",
+    answer:
+      "Absolutely. We provide complete HubSpot setup, custom integrations, workflow automation, sales pipeline optimization, and marketing automation services.",
+  },
+  {
+    question: "Do you develop and optimize Shopify stores?",
+    answer:
+      "Yes. We design, develop, and optimize high-converting Shopify stores, including custom themes, app integrations, and performance enhancements.",
+  },
+  {
+    question: "Do you offer digital marketing services?",
+    answer:
+      "Yes. Our digital marketing services include SEO, paid advertising, social media marketing, lead generation, and conversion optimization strategies.",
   },
   {
     question: "How long does a typical project take?",
     answer:
-      "Project timelines vary based on complexity. Smart contracts typically take 2-4 weeks, while complete DeFi platforms may take 6-12 weeks. We provide detailed timelines during consultation.",
+      "Project timelines depend on scope and complexity. Small websites may take 2–4 weeks, while larger full-stack or eCommerce projects can take 6–10 weeks. We provide a detailed timeline after consultation.",
   },
   {
     question: "Do you provide post-launch support?",
     answer:
-      "Yes! We offer 24/7 support and maintenance packages to ensure your project runs smoothly. Our team is always available to address any issues or implement updates.",
-  },
-  {
-    question: "Can you help with exchange listings?",
-    answer:
-      "Absolutely! We have successfully listed 10+ tokens on major exchanges including CoinMarketCap, CoinGecko, and various DEX/CEX platforms. We handle the entire listing process.",
-  },
-  {
-    question: "What blockchain platforms do you work with?",
-    answer:
-      "We work with Ethereum, Binance Smart Chain, Polygon, Solana, and other major blockchain networks. We'll recommend the best platform based on your project requirements.",
-  },
-  {
-    question: "How much does a smart contract project cost?",
-    answer:
-      "Project costs depend on complexity and requirements. Basic smart contracts start from $2000, while full DeFi platforms can range from $10,000 to $50,000+. Contact us for a detailed quote.",
+      "Yes. TechHubbix offers ongoing maintenance, performance optimization, and 24/7 support to ensure your digital products run smoothly after launch.",
   },
 ];
 

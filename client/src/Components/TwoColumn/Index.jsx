@@ -1,12 +1,13 @@
 import React from "react";
 import "./Style.css";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
   const openPopup = () => {
     // Add your popup logic here
     console.log("Popup opened!");
   };
-
+  const navigate = useNavigate();
   const features = [
     {
       icon: "fas fa-bolt",
@@ -47,19 +48,15 @@ const AboutSection = () => {
               Let's <span className="gradient-text-h">Build !</span>
             </h2>
             <p>
-              We are a premier blockchain development company specializing in
-              smart contracts, DeFi platforms, and token launches.
+              We are a premier software development company specializing in HubSpot development, full-stack applications, Shopify stores, and digital marketing solutions.
             </p>
             <p>
-              Our mission is to deliver innovative, secure, and scalable
-              blockchain solutions that empower businesses to grow and stay
-              ahead in the digital era.
+             Our mission is to deliver innovative, secure, and scalable digital solutions that help businesses grow and stay ahead in the competitive digital landscape.
             </p>
             <p>
-              From concept to deployment, we build high-performance blockchain
-              products engineered for reliability and long-term success.
+              From strategy to deployment, we build high-performance products engineered for reliability, growth, and long-term success.
             </p>
-            <button onClick={openPopup} className="dm-btn-primary-h">
+            <button onClick={() => navigate("/projects")} className="dm-btn-primary-h">
               View Demo
             </button>
           </div>

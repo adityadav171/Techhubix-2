@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -7,15 +8,10 @@ const CTASection = () => {
       <div className="container-h">
         <div className="cta-content-h">
           <h2>Ready to Transform Your Business?</h2>
-          <p>Join hundreds of clients growing with ArrayBlocks.</p>
-          <a
-            href="https://arrayblocks.net/contact-us/"
-            className="cta-btn-h"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Start Your Project Now →
-          </a>
+          <p>Join hundreds of clients growing with TechHubbix.</p>
+          <Link to="/contact" className="cta-btn-h">
+  Start Your Project Now →
+</Link>
         </div>
       </div>
     </section>

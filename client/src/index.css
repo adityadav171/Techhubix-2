@@ -387,3 +387,53 @@ section.section-h.cta-section-h {
     text-align: center;
     margin-bottom: 30px;
 }
+
+.challenge-block p,.solution-block p {
+    color: #000;
+    margin-top: 10px;
+}
+
+
+
+body .challenge-block p,.solution-block p {
+    color: #000;
+    margin-top: 10px;
+}
+
+body section.contact-content .contact-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+body .contact-form-section {
+    width: 100%;
+}
+
+body .contact-info-section {
+    width: 100%;
+    flex-direction: row;
+}
+
+body .contact-info-cards {
+    width: 100%;
+    display: flex;
+}
+
+body .contact-form-section {
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 15px 55px -5px rgba(9, 31, 67, .1);
+    -moz-box-shadow: 0 15px 55px -5px rgba(9,31,67,.1);
+    box-shadow: 0 15px 55px -5px rgba(9, 31, 67, .1);
+}
+
+body .contact-form-section form input, .contact-form-section form select, .contact-form-section form textarea {
+    border: 1px solid #eee;
+    min-height: 50px;
+}
+
+body .contact-form-section h2 {
+    font-size: 30px;
+    color: #6366f1;
+}

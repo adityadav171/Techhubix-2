@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 import { servicesData } from "../../data/servicesData";
 
 const Services = () => {
-  // Filter out Mobile App Development (id: 2) and Blockchain Development (id: 3)
-  const filteredServices = servicesData.filter(
-    (service) => service.id !== 2 && service.id !== 3
-  );
+  // Display all services
+  const filteredServices = servicesData;
 
   return (
     <section className="section-h">

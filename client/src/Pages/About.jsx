@@ -7,6 +7,7 @@
 import React, { useEffect } from 'react';
 import { logInfo } from '../utils/logger';
 import './About.css';
+import { useNavigate } from 'react-router';
 
 /**
  * About - Company information page
@@ -23,6 +24,8 @@ const About = () => {
     logInfo('About page loaded');
     window.scrollTo(0, 0);
   }, []);
+
+  const navigate = useNavigate();
 
   return (
     <div className="about-page">
@@ -230,7 +233,7 @@ const About = () => {
         <div className="container">
           <h2>Ready to Work Together?</h2>
           <p>Let's discuss how we can help transform your business digitally.</p>
-          <button className="cta-button">Get in Touch</button>
+          <button onClick={() => navigate("/contact")} className="cta-button">Get in Touch</button>
         </div>
       </section>
     </div>

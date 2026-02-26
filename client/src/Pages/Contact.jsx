@@ -135,15 +135,15 @@ const Contact = () => {
       details: '+1 (555) 123-4567'
     },
     {
-      icon: '✉️',
+      icon: <i class="fa-solid fa-envelope"></i>,
       title: 'Email',
       details: 'hello@techubbix.com'
-    },
-    {
-      icon: '⏰',
-      title: 'Business Hours',
-      details: 'Mon - Fri: 9:00 AM - 6:00 PM (EST)'
     }
+    // {
+    //   icon: '⏰',
+    //   title: 'Business Hours',
+    //   details: 'Mon - Fri: 9:00 AM - 6:00 PM (EST)'
+    // }
   ];
 
   return (

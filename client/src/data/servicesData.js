@@ -6,188 +6,156 @@
 export const servicesData = [
   {
     id: 1,
-    slug: 'website-development',
-    title: 'Website Development',
-    shortDescription: 'Modern, responsive websites built with latest technologies',
-    description: 'We create modern, responsive websites that provide exceptional user experiences across all devices. Our team uses cutting-edge technologies to build fast, secure, and scalable web solutions.',
+    slug: 'full-stack-development',
+    title: 'Full Stack Development',
+    shortDescription: 'Scalable web applications built with modern technologies',
+    description:
+      'We build secure, high-performance, and scalable web applications tailored to your business goals using modern frontend and backend technologies.',
     icon: '💻',
     category: 'Development',
-    technologies: ['React', 'Node.js', 'MongoDB', 'PostgreSQL', 'Express', 'Vue.js'],
+    technologies: ['React', 'Node.js', 'MongoDB', 'PostgreSQL', 'Express', 'Next.js'],
     features: [
       'Custom web application development',
-      'API design and implementation',
-      'Database architecture and optimization',
-      'Cloud deployment and DevOps',
+      'API development & integration',
+      'Database architecture design',
+      'Cloud deployment',
       'Performance optimization',
-      'Security implementation',
-      'Scalable architecture design',
-      'Real-time applications'
+      'Security best practices',
+      'Scalable system architecture',
+      'Ongoing maintenance & support'
     ],
     pricing: 'Custom Quote',
-    timeline: '8-16 weeks',
-    process: [
-      'Requirements gathering and analysis',
-      'System architecture design',
-      'Frontend development',
-      'Backend development',
-      'Integration and testing',
-      'Deployment',
-      'Maintenance and support'
-    ]
-  },
-  {
-    id: 2,
-    slug: 'mobile-app-development',
-    title: 'Mobile App Development',
-    shortDescription: 'Native and cross-platform mobile apps for iOS and Android',
-    description: 'We develop high-performance native and cross-platform mobile applications tailored to your business needs. Our team specializes in creating user-friendly apps that drive engagement and revenue.',
-    icon: '📱',
-    category: 'Development',
-    technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Firebase'],
-    features: [
-      'Native iOS development',
-      'Native Android development',
-      'Cross-platform development',
-      'UI/UX design',
-      'API integration',
-      'Real-time synchronization',
-      'Push notifications',
-      'App store optimization'
-    ],
-    pricing: 'Custom Quote',
-    timeline: '8-16 weeks',
+    timeline: '6-12 weeks',
     process: [
       'Requirement analysis',
-      'UI/UX design',
-      'Native development',
-      'API integration',
-      'Testing and QA',
-      'App store submission',
+      'System architecture planning',
+      'Frontend & backend development',
+      'Testing & QA',
+      'Deployment',
       'Post-launch support'
     ]
   },
   {
-    id: 3,
-    slug: 'blockchain-development',
-    title: 'Blockchain Development',
-    shortDescription: 'Smart contracts, DeFi platforms, and Web3 solutions',
-    description: 'We specialize in blockchain technology including smart contract development, DeFi platforms, NFT solutions, and comprehensive Web3 applications tailored to your business needs.',
-    icon: '⛓️',
+    id: 2,
+    slug: 'hubspot-development',
+    title: 'HubSpot Development',
+    shortDescription: 'CRM setup, automation, and custom HubSpot solutions',
+    description:
+      'We help businesses maximize HubSpot with CRM setup, workflow automation, custom integrations, and marketing optimization strategies.',
+    icon: '⚙️',
     category: 'Development',
-    technologies: ['Ethereum', 'Solidity', 'Web3.js', 'Hardhat', 'Binance Smart Chain'],
+    technologies: ['HubSpot CRM', 'HubL', 'Marketing Automation', 'API Integrations'],
     features: [
-      'Smart contract development',
-      'DeFi platform development',
-      'Token creation and launch',
-      'NFT marketplace development',
-      'Blockchain integration',
-      'Security audits',
-      'Exchange listings',
-      'Post-launch support and maintenance'
+      'HubSpot CRM setup',
+      'Workflow automation',
+      'Sales pipeline optimization',
+      'Custom HubSpot themes & modules',
+      'Third-party integrations',
+      'Lead nurturing automation',
+      'Reporting dashboards',
+      'Ongoing optimization'
     ],
     pricing: 'Custom Quote',
-    timeline: '8-20 weeks',
+    timeline: '4-8 weeks',
     process: [
-      'Concept and planning',
-      'Smart contract development',
-      'Security audit',
-      'Testing on testnets',
-      'Mainnet deployment',
-      'Exchange listing',
-      '24/7 support'
+      'Business analysis',
+      'CRM structure setup',
+      'Automation configuration',
+      'Integration setup',
+      'Testing',
+      'Launch & training'
+    ]
+  },
+  {
+    id: 3,
+    slug: 'shopify-development',
+    title: 'Shopify Development',
+    shortDescription: 'High-converting Shopify stores built for growth',
+    description:
+      'We design and develop conversion-focused Shopify stores with custom themes, app integrations, and performance optimization.',
+    icon: '🛍️',
+    category: 'Development',
+    technologies: ['Shopify', 'Liquid', 'Shopify Apps', 'JavaScript', 'HTML/CSS'],
+    features: [
+      'Custom Shopify store development',
+      'Theme customization',
+      'App integration',
+      'Payment gateway setup',
+      'Store optimization',
+      'Speed optimization',
+      'Conversion rate optimization',
+      'Ongoing maintenance'
+    ],
+    pricing: 'Custom Quote',
+    timeline: '4-10 weeks',
+    process: [
+      'Store planning',
+      'Design & theme setup',
+      'App integration',
+      'Product & payment setup',
+      'Testing',
+      'Launch'
     ]
   },
   {
     id: 4,
     slug: 'seo-services',
     title: 'SEO Services',
-    shortDescription: 'Optimize your site for search engines and increase visibility',
-    description: 'Comprehensive SEO services designed to improve your website ranking and drive organic traffic. Our data-driven approach ensures measurable results and sustainable growth.',
+    shortDescription: 'Improve rankings and drive organic traffic',
+    description:
+      'Our data-driven SEO strategies improve search rankings, increase organic traffic, and deliver measurable business growth.',
     icon: '🔍',
     category: 'Marketing',
-    technologies: ['SEO Tools', 'Analytics', 'Content Optimization', 'Link Building'],
+    technologies: ['SEO Tools', 'Google Analytics', 'Search Console', 'Keyword Research Tools'],
     features: [
-      'Keyword research and optimization',
-      'On-page SEO optimization',
-      'Off-page SEO and link building',
+      'Keyword research',
+      'On-page SEO',
       'Technical SEO audit',
-      'Content strategy development',
-      'Local SEO optimization',
-      'Analytics and reporting',
-      'Competitive analysis'
+      'Link building',
+      'Local SEO',
+      'Content optimization',
+      'Competitor analysis',
+      'Monthly reporting'
     ],
     pricing: 'Custom Quote',
     timeline: 'Ongoing',
     process: [
       'SEO audit',
-      'Keyword research',
-      'On-page optimization',
-      'Content creation',
-      'Link building strategy',
-      'Monthly monitoring',
-      'Performance reporting'
+      'Strategy creation',
+      'Optimization implementation',
+      'Content improvements',
+      'Monitoring & reporting'
     ]
   },
   {
     id: 5,
     slug: 'digital-marketing',
     title: 'Digital Marketing',
-    shortDescription: 'Strategic marketing campaigns to grow your online presence',
-    description: 'Comprehensive digital marketing solutions including social media marketing, PPC campaigns, email marketing, and content marketing to maximize your ROI.',
+    shortDescription: 'Performance-driven marketing campaigns',
+    description:
+      'We create and manage strategic digital marketing campaigns to generate leads, increase brand awareness, and maximize ROI.',
     icon: '📢',
     category: 'Marketing',
-    technologies: ['Google Ads', 'Facebook Ads', 'Analytics', 'Email Marketing'],
+    technologies: ['Google Ads', 'Meta Ads', 'Email Marketing', 'Analytics'],
     features: [
       'Social media marketing',
-      'PPC campaigns',
+      'PPC advertising',
       'Email marketing automation',
-      'Content marketing strategy',
-      'Conversion rate optimization',
-      'Marketing automation',
-      'Analytics and ROI tracking',
-      'Brand development'
+      'Lead generation campaigns',
+      'Conversion optimization',
+      'Marketing analytics',
+      'Funnel strategy',
+      'Brand positioning'
     ],
     pricing: 'Custom Quote',
     timeline: 'Ongoing',
     process: [
       'Marketing audit',
-      'Strategy development',
-      'Campaign setup',
-      'Content creation',
-      'Campaign optimization',
-      'Monthly reporting',
-      'Strategy refinement'
-    ]
-  },
-  {
-    id: 6,
-    slug: 'wordpress-development',
-    title: 'WordPress Development',
-    shortDescription: 'Professional WordPress sites and plugins',
-    description: 'From corporate websites to e-commerce platforms, we build fully customized WordPress solutions with performance and security at the forefront.',
-    icon: '📝',
-    category: 'Development',
-    technologies: ['WordPress', 'PHP', 'MySQL', 'JavaScript', 'WooCommerce'],
-    features: [
-      'Custom theme development',
-      'Plugin development and customization',
-      'WooCommerce setup and optimization',
-      'SEO optimization',
-      'Performance optimization',
-      'Security hardening',
-      'Migration services',
-      'Maintenance and support'
-    ],
-    pricing: 'Custom Quote',
-    timeline: '6-14 weeks',
-    process: [
-      'Requirements and planning',
-      'Plugin selection and setup',
-      'Theme customization/development',
-      'Content integration',
-      'Testing and optimization',
-      'Launch',
-      'Ongoing support'
+      'Campaign strategy',
+      'Ad setup',
+      'Optimization',
+      'Performance tracking',
+      'Monthly reporting'
     ]
   }
 ];

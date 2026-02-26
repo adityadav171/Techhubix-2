@@ -262,6 +262,7 @@
   border: 1px solid var(--gray-200);
   transition: all 0.3s ease;
   text-align: center;
+  width: 100%;
 }
 
 .info-card:hover {

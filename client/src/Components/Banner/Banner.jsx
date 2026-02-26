@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Banner.css";
+import { useNavigate } from "react-router-dom";
 
 const words = [
-  "Website Development",
+  "Full-stack Development",
   "HubSpot Development",
-  
+  "Shopify Development",
   "Digital Marketing",
   "SEO Services",
 ];
@@ -14,6 +15,7 @@ const HeroSection = () => {
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const currentWord = words[wordIndex];
@@ -55,9 +57,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="dm-desc-h">
-            We provide custom software and blockchain development services,
-            helping businesses build powerful products and scale with digital
-            marketing solutions.
+          We provide custom software development and scalable digital solutions tailored to your business needs. We combine smart development with data-driven digital marketing to help brands grow, optimize performance, and scale efficiently.
           </p>
 
           {/* <div className="dm-rating-h">
@@ -103,7 +103,7 @@ const HeroSection = () => {
             <button
               type="button"
               className="dm-btn-primary-h"
-              onClick={() => window.openPopup?.()}
+              onClick={() =>navigate("/contact")}
             >
               Get Free Site Audit
             </button>
