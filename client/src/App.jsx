@@ -15,6 +15,8 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import ServicesList from "./Pages/Services/ServicesList";
 import ServiceDetails from "./Pages/Services/ServiceDetails";
+import ThemesList from "./Pages/Themes/ThemesList";
+import ThemeDetail from "./Pages/Themes/ThemeDetail";
 import Projects from "./Pages/Projects";
 import ProjectDetail from "./Pages/ProjectDetail";
 import Blogs from "./Pages/Blogs";
@@ -49,6 +51,10 @@ const App = () => {
         {/* Services Pages */}
         <Route path="/services" element={<ServicesList />} />
         <Route path="/services/:slug" element={<ServiceDetails />} />
+
+        {/* Themes Pages */}
+        <Route path="/themes" element={<ThemesList />} />
+        <Route path="/themes/:slug" element={<ThemeDetail />} />
 
         {/* Projects Pages */}
         <Route path="/projects" element={<Projects />} />

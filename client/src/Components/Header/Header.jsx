@@ -8,6 +8,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { logDebug } from "../../utils/logger";
 import { getServiceCategories } from "../../data/servicesData";
+import { getThemeCategories } from "../../data/themesData";
 import "./Header.css";
 
 /**
@@ -20,6 +21,7 @@ import "./Header.css";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const serviceCategories = getServiceCategories();
+  const themeCategories = getThemeCategories();
 
   /**
    * Toggle services mega menu
@@ -136,15 +138,87 @@ const Header = () => {
                 </div>
               </li>
 
+              {/* Themes Menu with Mega Menu */}
+              <li className="js-menu">
+                <Link to="/themes">Themes</Link>
+
+                <div className="mega-menu themes-mega">
+                  <div className="themes-column">
+                    <h4>Our Themes</h4>
+                    <ul>
+                      <li>
+                        <Link
+                          to="/themes/modern-corporate"
+                          className="themes-title"
+                        >
+                          Modern Corporate
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/themes/creative-agency"
+                          className="themes-title"
+                        >
+                          Creative Agency
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/themes/tech-startup"
+                          className="themes-title"
+                        >
+                          Tech Startup
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/themes/ecommerce-minimal"
+                          className="themes-title"
+                        >
+                          Ecommerce Minimal
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/themes/blog-magazine"
+                          className="themes-title"
+                        >
+                          Blog & Magazine
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/themes/service-provider"
+                          className="themes-title"
+                        >
+                          Service Provider
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="mega-right">
+                    <h4>Explore</h4>
+                    <p>Beautiful, responsive themes to elevate your online presence.</p>
+                    <Link
+                      to="/themes"
+                      className="mega-cta"
+                    >
+                      View All Themes →
+                    </Link>
+                  </div>
+                </div>
+              </li>
+
               {/* Projects Link */}
-              <li>
+              {/* <li>
                 <Link to="/projects">Projects</Link>
               </li>
 
               {/* Blogs Link */}
-              <li>
+              {/* <li>
                 <Link to="/blogs">Blog</Link>
-              </li>
+              </li> */} 
             </ul>
           </nav>
 
@@ -175,8 +249,9 @@ const Header = () => {
             <li><Link to="/" onClick={handleMenuClose}>Home</Link></li>
             <li><Link to="/about" onClick={handleMenuClose}>About</Link></li>
             <li><Link to="/services" onClick={handleMenuClose}>Services</Link></li>
-            <li><Link to="/projects" onClick={handleMenuClose}>Projects</Link></li>
-            <li><Link to="/blogs" onClick={handleMenuClose}>Blog</Link></li>
+            <li><Link to="/themes" onClick={handleMenuClose}>Themes</Link></li>
+            {/* <li><Link to="/projects" onClick={handleMenuClose}>Projects</Link></li>
+            <li><Link to="/blogs" onClick={handleMenuClose}>Blog</Link></li> */}
             <li><Link to="/contact" onClick={handleMenuClose} className="contact-mobile-btn">Contact Us</Link></li>
           </ul>
         </nav>

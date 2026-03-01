@@ -113,7 +113,7 @@ const HeroSection = () => {
         <div className="dm-right-h">
           <div className="dm-img-card-h">
             <img
-              src="https://arrayblocks.net/wp-content/uploads/2025/12/1.avif"
+              src="/banner_img1.png"
               alt="Digital Marketing"
               decoding="async"
             />
