@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -28,24 +29,28 @@ const Footer = () => {
               TechHubbix is a global digital solutions partner specializing in full-stack development, HubSpot CRM implementation, Shopify eCommerce, and performance-driven digital marketing. We help startups and growing businesses scale smarter.
             </p>
             <div className="footer-social">
-              <a
+              {/* Facebook - Commented Out */}
+              {/* <a
                 href="https://www.facebook.com/profile.php?id=61582786569261"
                 className="social-icon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebookF} />
-              </a>
-              <a
+              </a> */}
+              
+              {/* Twitter - Commented Out */}
+              {/* <a
                 href="https://x.com/ArrayBlocksNet"
                 className="social-icon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faTwitter} />
-              </a>
+              </a> */}
+              
               <a
-                href="https://www.instagram.com/arrayblocks_net/?hl=en"
+                href="https://www.linkedin.com/in/the-techhubbix-web-app-development-for-startups-09125b38a/"
                 className="social-icon"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,7 +59,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a
-                href="https://www.linkedin.com/company/arrayblocks/"
+                href="https://www.linkedin.com/in/the-techhubbix-web-app-development-for-startups-09125b38a/"
                 className="social-icon"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -70,21 +75,13 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul className="footer-links">
               <li>
-                <a href="https://arrayblocks.net/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="https://arrayblocks.net/about/">About Us</a>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
-                <a href="https://arrayblocks.net/recent-projects/">
-                  Recent Projects
-                </a>
-              </li>
-              <li>
-                <a href="https://arrayblocks.net/blog/">Blog</a>
-              </li>
-              <li>
-                <a href="https://arrayblocks.net/contact-us/">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -94,27 +91,27 @@ const Footer = () => {
             <h3>Services</h3>
             <ul className="footer-links">
               <li>
-                <a href="https://arrayblocks.net/services/website-development/">
-                  Website Development
-                </a>
+                <Link to="/services/full-stack-development">
+                  Full-Stack Development
+                </Link>
               </li>
               <li>
-                <a href="https://arrayblocks.net/services/mobile-app-development/">
-                  Mobile App Development
-                </a>
+                <Link to="/services/hubspot-development">
+                  HubSpot CRM Development
+                </Link>
               </li>
               <li>
-                <a href="https://arrayblocks.net/services/blockchain-development/">
-                  Blockchain Development
-                </a>
+                <Link to="/services/shopify-development">
+                  Shopify eCommerce
+                </Link>
               </li>
               <li>
-                <a href="https://arrayblocks.net/services/seo/">SEO Services</a>
+                <Link to="/services/seo-services">SEO & Growth Marketing</Link>
               </li>
               <li>
-                <a href="https://arrayblocks.net/services/digital-marketing/">
-                  Digital Marketing
-                </a>
+                <Link to="/services/digital-marketing">
+                  Performance Digital Marketing
+                </Link>
               </li>
             </ul>
           </div>
@@ -125,7 +122,7 @@ const Footer = () => {
             <ul className="footer-links contact-list">
               <li>
                 <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-                <a href="mailto:contact@techhubbix.com">contact@techhubbix.com</a>
+                <a href="mailto:info@techhubbix.com">contact@techhubbix.com</a>
               </li>
               <li>
                 <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
@@ -133,7 +130,7 @@ const Footer = () => {
               </li>
               <li>
                 <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-                <a href="tel:+919034215001">+91 90342 15001</a>
+                <a href="tel:+918130216017">+91 81302 16017</a>
               </li>
             </ul>
           </div>
