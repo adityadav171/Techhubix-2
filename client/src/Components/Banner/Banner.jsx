@@ -122,7 +122,7 @@ const HeroSection = () => {
         <div className="dm-right-h">
           <div className="dm-img-card-h">
             <img
-              src=""
+              src="/banner_img1.png"
               alt="Digital Marketing"
               decoding="async"
             />
