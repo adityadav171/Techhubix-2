@@ -145,28 +145,40 @@ const ServiceDetails = () => {
       {/* Why Choose Section */}
       <section className="why-choose">
         <div className="container">
-          <h2>Why Choose Us for {service.title}?</h2>
+          <h2>{service.whyChooseReasons ? `Why Choose TechHubbix for ${service.title}?` : `Why Choose Us for ${service.title}?`}</h2>
           <div className="why-grid">
-            <div className="why-card">
-              <div className="why-icon">🎯</div>
-              <h3>Expert Team</h3>
-              <p>Experienced professionals with proven expertise in {service.category.toLowerCase()} services.</p>
-            </div>
-            <div className="why-card">
-              <div className="why-icon">⚡</div>
-              <h3>Quality Assured</h3>
-              <p>Rigorous testing and quality assurance processes ensure excellence in every project.</p>
-            </div>
-            <div className="why-card">
-              <div className="why-icon">📈</div>
-              <h3>Results-Driven</h3>
-              <p>We focus on measurable outcomes that positively impact your business growth.</p>
-            </div>
-            <div className="why-card">
-              <div className="why-icon">🤝</div>
-              <h3>Client-Centric</h3>
-              <p>Your success is our priority. We maintain transparent communication throughout the project.</p>
-            </div>
+            {service.whyChooseReasons ? (
+              service.whyChooseReasons.map((reason, index) => (
+                <div key={index} className="why-card">
+                  <div className="why-icon">✓</div>
+                  <h3>{reason.title}</h3>
+                  <p>{reason.description}</p>
+                </div>
+              ))
+            ) : (
+              <>
+                <div className="why-card">
+                  <div className="why-icon">🎯</div>
+                  <h3>Expert Team</h3>
+                  <p>Experienced professionals with proven expertise in {service.category.toLowerCase()} services.</p>
+                </div>
+                <div className="why-card">
+                  <div className="why-icon">⚡</div>
+                  <h3>Quality Assured</h3>
+                  <p>Rigorous testing and quality assurance processes ensure excellence in every project.</p>
+                </div>
+                <div className="why-card">
+                  <div className="why-icon">📈</div>
+                  <h3>Results-Driven</h3>
+                  <p>We focus on measurable outcomes that positively impact your business growth.</p>
+                </div>
+                <div className="why-card">
+                  <div className="why-icon">🤝</div>
+                  <h3>Client-Centric</h3>
+                  <p>Your success is our priority. We maintain transparent communication throughout the project.</p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>
@@ -174,14 +186,33 @@ const ServiceDetails = () => {
       {/* CTA Section */}
       <section className="service-bottom-cta">
         <div className="container">
-          <h2>Let's Discuss Your {service.title} Project</h2>
-          <p>Get in touch with our team for a free consultation</p>
-          <div className="cta-buttons">
-            <button className="btn-primary">Get Started Now</button>
-            <Link to="/services" className="btn-secondary">
-              Explore Other Services
-            </Link>
-          </div>
+          {service.customCTA ? (
+            <>
+              <h2>{service.customCTA.title}</h2>
+              <p>{service.customCTA.description}</p>
+              <div className="cta-buttons">
+                {service.customCTA.buttons.map((button, index) => (
+                  <button
+                    key={index}
+                    className={button.type === 'primary' ? 'btn-primary' : 'btn-secondary'}
+                  >
+                    {button.label}
+                  </button>
+                ))}
+              </div>
+            </>
+          ) : (
+            <>
+              <h2>Let's Discuss Your {service.title} Project</h2>
+              <p>Get in touch with our team for a free consultation</p>
+              <div className="cta-buttons">
+                <button className="btn-primary">Get Started Now</button>
+                <Link to="/services" className="btn-secondary">
+                  Explore Other Services
+                </Link>
+              </div>
+            </>
+          )}
         </div>
       </section>
     </div>

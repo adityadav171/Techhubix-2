@@ -59,9 +59,23 @@ const ServicesList = () => {
       {/* Hero Section */}
       <section className="services-hero">
         <div className="services-hero-content">
-          <h1 className="services-title">Our Services</h1>
+          <h1 className="services-title">Build Smarter Digital Experiences With TechHubbix</h1>
           <p className="services-subtitle">
-            Comprehensive digital solutions to elevate your business
+            We help ambitious businesses transform their ideas into powerful digital products. From custom web development to advanced marketing strategies, TechHubbix delivers scalable solutions designed to drive growth, improve performance, and create long-term value.
+          </p>
+          <button className="hero-cta-button">🚀 Start Your Project</button>
+        </div>
+      </section>
+
+      {/* About Short Section */}
+      <section className="about-short-section">
+        <div className="container">
+          <h2>Your Technology Partner for Digital Growth</h2>
+          <p>
+            TechHubbix is a forward-thinking technology company focused on building high-performance digital solutions for modern businesses. Our team combines technical expertise, creative design, and strategic thinking to help brands innovate, scale, and stay competitive in a rapidly evolving digital world.
+          </p>
+          <p className="highlight-text">
+            We don't just build websites — we create powerful digital ecosystems that drive measurable results.
           </p>
         </div>
       </section>
@@ -117,37 +131,32 @@ const ServicesList = () => {
       {/* Benefits Section */}
       <section className="services-benefits">
         <div className="container">
-          <h2>Why Choose Our Services?</h2>
+          <h2>Why Choose TechHubbix</h2>
           <div className="benefits-grid">
             <div className="benefit-card">
-              <div className="benefit-icon">🎯</div>
+              <div className="benefit-icon">✓</div>
               <h3>Tailored Solutions</h3>
-              <p>Custom-built solutions designed specifically for your business needs and goals.</p>
+              <p>Every business is unique. We create customized digital solutions designed specifically around your goals, challenges, and growth strategy.</p>
             </div>
             <div className="benefit-card">
-              <div className="benefit-icon">⚡</div>
+              <div className="benefit-icon">✓</div>
               <h3>High Performance</h3>
-              <p>Optimized for speed, security, and scalability across all platforms.</p>
+              <p>Our solutions are built with performance, scalability, and security in mind to ensure long-term reliability.</p>
             </div>
             <div className="benefit-card">
-              <div className="benefit-icon">🤝</div>
-              <h3>Expert Team</h3>
-              <p>Experienced professionals with proven track record in digital development.</p>
+              <div className="benefit-icon">✓</div>
+              <h3>Experienced Professionals</h3>
+              <p>Our team brings together skilled developers, designers, and digital strategists with deep industry knowledge.</p>
             </div>
             <div className="benefit-card">
-              <div className="benefit-icon">📞</div>
-              <h3>24/7 Support</h3>
-              <p>Dedicated support team available to assist with any questions or issues.</p>
+              <div className="benefit-icon">✓</div>
+              <h3>Transparent Process</h3>
+              <p>We follow a clear and collaborative workflow with regular communication and project updates.</p>
             </div>
             <div className="benefit-card">
-              <div className="benefit-icon">💼</div>
-              <h3>Professional Approach</h3>
-              <p>Systematic process with clear communication and transparent timelines.</p>
-            </div>
-            <div className="benefit-card">
-              <div className="benefit-icon">🚀</div>
-              <h3>Future-Ready</h3>
-              <p>Built with latest technologies ensuring longevity and relevance.</p>
+              <div className="benefit-icon">✓</div>
+              <h3>Ongoing Support</h3>
+              <p>Our relationship doesn't end at launch. We provide continuous support and optimization to ensure long-term success.</p>
             </div>
           </div>
         </div>
@@ -156,9 +165,9 @@ const ServicesList = () => {
       {/* CTA Section */}
       <section className="services-cta">
         <div className="container">
-          <h2>Ready to Get Started?</h2>
-          <p>Let's discuss your project requirements and find the perfect solution.</p>
-          <button className="cta-button">Start Your Project</button>
+          <h2>Ready to Transform Your Business Digitally?</h2>
+          <p>Let's collaborate to create innovative digital solutions that help your business grow faster, smarter, and stronger.</p>
+          <button className="cta-button">🚀 Start Your Project Today</button>
         </div>
       </section>
     </div>
