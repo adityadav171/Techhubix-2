@@ -25,9 +25,7 @@ const Footer = () => {
               Tech<span>Hubbix</span>
             </div>
             <p className="footer-description">
-              Building exceptional digital experiences with cutting-edge
-              technology and creative innovation. Your trusted partner for web
-              development solutions.
+              TechHubbix is a global digital solutions partner specializing in full-stack development, HubSpot CRM implementation, Shopify eCommerce, and performance-driven digital marketing. We help startups and growing businesses scale smarter.
             </p>
             <div className="footer-social">
               <a
@@ -127,7 +125,11 @@ const Footer = () => {
             <ul className="footer-links contact-list">
               <li>
                 <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-                <a href="mailto:info@arrayblocks.net">info@arrayblocks.net</a>
+                <a href="mailto:contact@techhubbix.com">contact@techhubbix.com</a>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
+                <a href="mailto:sales@techhubbix.com">sales@techhubbix.com</a>
               </li>
               <li>
                 <FontAwesomeIcon icon={faPhone} className="contact-icon" />
@@ -140,7 +142,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © 2025 <span>ArrayBlocks</span>. All rights reserved.
+            © 2026 <span>TechHubbix</span>. All rights reserved.
           </p>
           <ul className="footer-bottom-links">
             <li>

@@ -1,0 +1,262 @@
+/* Pricing Section */
+.pricing-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  color: #1a202c;
+}
+
+.pricing-header p {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.pricing-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.highlighted {
+  border: 2px solid #667eea;
+  transform: scale(1.05);
+}
+
+.pricing-card.highlighted:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.pricing-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 20px 0 25px 0;
+}
+
+.price-section {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.period {
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  flex-grow: 1;
+}
+
+.features-list li {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #555;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+.checkmark {
+  color: #667eea;
+  font-weight: bold;
+  font-size: 18px;
+  min-width: 20px;
+}
+
+.cta-button {
+  padding: 14px 24px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #5568d3;
+  transform: scale(1.02);
+}
+
+.pricing-footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .pricing-card.highlighted {
+    transform: scale(1);
+  }
+
+  .pricing-card.highlighted:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 40px 20px;
+  }
+
+  .pricing-header h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .pricing-header p {
+    font-size: 15px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pricing-card {
+    padding: 30px 25px;
+  }
+
+  .pricing-card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .price {
+    font-size: 36px;
+  }
+
+  .features-list li {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-section {
+    padding: 30px 15px;
+  }
+
+  .pricing-header h2 {
+    font-size: 22px;
+  }
+
+  .pricing-header p {
+    font-size: 14px;
+  }
+
+  .pricing-card {
+    padding: 20px 15px;
+    margin-top: 8px;
+  }
+
+  .popular-badge {
+    top: -8px;
+    padding: 4px 12px;
+    font-size: 11px;
+  }
+
+  .pricing-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .price {
+    font-size: 32px;
+  }
+
+  .period {
+    font-size: 12px;
+  }
+
+  .features-list li {
+    padding: 8px 0;
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .checkmark {
+    font-size: 16px;
+    min-width: 18px;
+  }
+
+  .cta-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}

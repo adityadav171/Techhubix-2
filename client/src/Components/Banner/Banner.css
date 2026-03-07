@@ -125,6 +125,25 @@ img.emoji {
   box-shadow: var(--shadow-xl);
 }
 
+.dm-btn-secondary-h {
+  background: transparent;
+  padding: 14px 32px;
+  border-radius: 40px;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+}
+
+.dm-btn-secondary-h:hover {
+  transform: translateY(-2px);
+  background: rgba(99, 102, 241, 0.1);
+  box-shadow: var(--shadow-md);
+}
+
 span.typewriter-h {
   font-size: clamp(1.5rem, 5vw, 2.2rem);
   display: block;
@@ -138,6 +157,9 @@ span.typewriter-h {
 
 .dm-buttons-h {
   margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1024px) {
@@ -174,6 +196,13 @@ span.typewriter-h {
 
   .dm-buttons-h {
     margin-top: 25px;
+    flex-direction: column;
+  }
+
+  .dm-btn-primary-h,
+  .dm-btn-secondary-h {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -194,8 +223,15 @@ span.typewriter-h {
     font-size: 1.25rem;
   }
 
-  .dm-btn-primary-h {
+  .dm-btn-primary-h,
+  .dm-btn-secondary-h {
     padding: 12px 24px;
     font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .dm-buttons-h {
+    flex-direction: column;
+    gap: 12px;
   }
 }

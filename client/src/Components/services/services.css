@@ -98,8 +98,24 @@
 .service-item-h p {
   color: var(--gray-600);
   font-size: 0.95rem;
-  margin: 0;
+  margin: 0 0 15px 0;
   line-height: 1.6;
+  flex-grow: 1;
+}
+
+.service-link {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.service-item-h:hover .service-link {
+  color: var(--secondary);
+  transform: translateX(5px);
 }
 
 @media (max-width: 768px) {

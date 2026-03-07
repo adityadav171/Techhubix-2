@@ -8,13 +8,12 @@ const Services = () => {
   const filteredServices = servicesData;
 
   return (
-    <section className="section-h">
+    <section className="section-h services-section-h">
       <h2 className="section-title-h">
-        Our <span>Services</span>
+        Our <span>Expertise</span>
       </h2>
       <p className="section-subtitle-h">
-        Empowering your business with cutting-edge technology and marketing
-        solutions
+        We combine technology, automation, and marketing intelligence to build scalable digital ecosystems.
       </p>
 
       <div className="services-container-h">
@@ -29,6 +28,7 @@ const Services = () => {
             </div>
             <h4>{service.title}</h4>
             <p>{service.shortDescription}</p>
+            <span className="service-link">Learn More →</span>
           </Link>
         ))}
       </div>

@@ -1,0 +1,154 @@
+/* Case Studies Section */
+.case-studies-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.case-studies-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.case-studies-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.case-studies-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  color: #1a202c;
+}
+
+.case-studies-header p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.case-study-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.case-study-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 25px 0;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #667eea;
+}
+
+.results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.result-icon {
+  font-size: 24px;
+  min-width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-text {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .case-studies-section {
+    padding: 40px 20px;
+  }
+
+  .case-studies-header h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .case-studies-header p {
+    font-size: 15px;
+  }
+
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .case-study-card {
+    padding: 30px;
+  }
+
+  .case-study-card h3 {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+
+  .result-item {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-studies-section {
+    padding: 30px 15px;
+  }
+
+  .case-studies-header h2 {
+    font-size: 22px;
+  }
+
+  .case-studies-header p {
+    font-size: 14px;
+  }
+
+  .case-study-card {
+    padding: 20px;
+  }
+
+  .case-study-card h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .results-list {
+    gap: 12px;
+  }
+
+  .result-item {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .result-icon {
+    font-size: 20px;
+    min-width: 25px;
+  }
+}

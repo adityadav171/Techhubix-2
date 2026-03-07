@@ -27,33 +27,120 @@ const About = () => {
 
   const navigate = useNavigate();
 
+  const differentiators = [
+    {
+      icon: '📈',
+      title: 'Business-First Approach',
+      description: 'We focus on ROI, not just design or code.'
+    },
+    {
+      icon: '⚡',
+      title: 'Performance-Driven Execution',
+      description: 'Every solution is optimized for speed, scalability, and measurable results.'
+    },
+    {
+      icon: '🔄',
+      title: 'Automation-Focused Systems',
+      description: 'We help businesses reduce manual work using CRM workflows and smart integrations.'
+    },
+    {
+      icon: '🤝',
+      title: 'Long-Term Partnership',
+      description: 'We support clients beyond project completion with ongoing maintenance and optimization.'
+    }
+  ];
+
+  const expertise = [
+    {
+      icon: '🔧',
+      title: 'Full Stack Development',
+      description: 'End-to-end web and application development using modern frameworks and cloud architecture. We build secure, high-performance, and scalable platforms engineered for speed, reliability, and future growth.'
+    },
+    {
+      icon: '🔗',
+      title: 'HubSpot CRM Implementation & Automation',
+      description: 'Comprehensive HubSpot setup, sales pipeline configuration, workflow automation, reporting dashboards, and third-party integrations designed to streamline operations and improve customer lifecycle management.'
+    },
+    {
+      icon: '🎨',
+      title: 'Brand-Focused Design & Custom Themes',
+      description: 'Strategic UI/UX design and custom theme development aligned with your brand identity. Every interface is crafted to enhance user experience, increase engagement, and improve conversion rates.'
+    },
+    {
+      icon: '🛒',
+      title: 'eCommerce Development & Optimization',
+      description: 'Shopify and WooCommerce solutions built for performance and revenue scalability. From store architecture to speed optimization and conversion enhancement, we create eCommerce systems that sell.'
+    },
+    {
+      icon: '📊',
+      title: 'SEO & Performance Marketing',
+      description: 'Data-driven digital marketing strategies including technical SEO, paid media campaigns (Google & Meta), funnel optimization, and lead generation systems focused on measurable ROI.'
+    },
+    {
+      icon: '⚙️',
+      title: 'Technology & Digital Transformation Consulting',
+      description: 'Expert guidance on technology stack selection, system architecture, automation strategy, and scalable digital infrastructure to future-proof your business.'
+    }
+  ];
+
+  const reasons = [
+    {
+      title: 'Proven Results Across Industries',
+      description: 'We have successfully delivered scalable digital solutions for startups, eCommerce brands, and growing businesses across multiple industries — helping them improve efficiency, increase conversions, and accelerate growth.'
+    },
+    {
+      title: 'End-to-End Digital Expertise',
+      description: 'From full-stack development and CRM automation to eCommerce optimization and performance marketing, we provide a complete digital ecosystem under one roof — eliminating the need for multiple vendors.'
+    },
+    {
+      title: 'Experienced & Specialized Team',
+      description: 'Our team consists of skilled developers, CRM specialists, designers, and marketing strategists with deep expertise in modern technologies and industry best practices.'
+    },
+    {
+      title: 'Business-First, Client-Centered Approach',
+      description: 'We prioritize understanding your unique goals, challenges, and growth vision. Every solution we build is aligned with your long-term business objectives.'
+    },
+    {
+      title: 'Enterprise-Grade Quality Assurance',
+      description: 'We follow rigorous testing protocols, security standards, and performance optimization processes to ensure every deliverable meets the highest quality benchmarks.'
+    },
+    {
+      title: 'Long-Term Partnership & Ongoing Support',
+      description: 'Our relationship doesn\'t end at launch. We provide continuous support, optimization, and strategic guidance to ensure sustained success and measurable results.'
+    }
+  ];
+
   return (
     <div className="about-page">
       {/* Hero Section */}
       <section className="about-hero">
         <div className="about-hero-content">
-          <h1 className="about-title">About TechHubbix</h1>
+          <h1 className="about-title">We Build Systems That Drive Business Growth</h1>
           <p className="about-subtitle">
-            Transforming Ideas into Digital Solutions
+            TechHubbix is a technology and digital growth company dedicated to helping businesses scale through smart development, automation, and performance marketing.
+          </p>
+          <p className="about-tagline">
+            We don't just build websites — we build revenue engines.
           </p>
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section className="about-intro">
+      {/* Who We Are Section */}
+      <section className="who-we-are">
         <div className="container">
-          <div className="intro-content">
-            <h2>Who We Are</h2>
+          <h2>Who We Are</h2>
+          <div className="who-we-are-content">
             <p>
-              TechHubbix is a forward-thinking digital solutions company dedicated to helping businesses 
-              transform their digital presence. With expertise spanning full stack development, HubSpot 
-              integration, e-commerce platforms, and digital marketing, we deliver comprehensive solutions 
-              tailored to your unique business needs.
+              TechHubbix was founded with a clear vision: to bridge the gap between technology and real business growth.
             </p>
             <p>
-              Founded with a passion for technology and innovation, we've helped over 50+ businesses 
-              achieve their digital transformation goals. Our team of experienced developers, designers, 
-              and strategists work collaboratively to create solutions that drive real business results.
+              In today's digital world, having a website is not enough. Businesses need scalable systems, optimized processes, and data-driven strategies to compete globally.
+            </p>
+            <p>
+              That's where we come in.
+            </p>
+            <p>
+              We combine full-stack development, CRM automation, Shopify expertise, and performance marketing to create solutions that are secure, scalable, and growth-focused.
             </p>
           </div>
         </div>
@@ -67,163 +154,72 @@ const About = () => {
               <div className="card-icon">🎯</div>
               <h3>Our Mission</h3>
               <p>
-                To empower businesses of all sizes with innovative, high-quality digital solutions 
-                that drive growth, improve efficiency, and create lasting value in the digital landscape.
+                To empower startups and growing businesses with technology solutions that increase efficiency, maximize revenue, and create long-term digital success.
               </p>
             </div>
             <div className="vision-card">
               <div className="card-icon">🚀</div>
               <h3>Our Vision</h3>
               <p>
-                To be the trusted technology partner that businesses turn to for transformative digital 
-                solutions, recognized for our expertise, reliability, and commitment to client success.
+                To become a globally trusted digital transformation partner for modern businesses.
               </p>
             </div>
-            <div className="values-card">
-              <div className="card-icon">💎</div>
-              <h3>Our Values</h3>
-              <ul className="values-list">
-                <li>Excellence & Quality</li>
-                <li>Innovation & Creativity</li>
-                <li>Client Success</li>
-                <li>Transparency & Trust</li>
-                <li>Continuous Learning</li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Company Stats */}
-      {/* <section className="about-stats">
+      {/* What Makes Us Different */}
+      <section className="differentiators">
         <div className="container">
-          <h2>By The Numbers</h2>
-          <div className="stats-grid">
-            <div className="stat-item">
-              <div className="stat-number">50+</div>
-              <div className="stat-label">Happy Clients</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">100+</div>
-              <div className="stat-label">Projects Completed</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">5+</div>
-              <div className="stat-label">Years Experience</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">98%</div>
-              <div className="stat-label">Client Satisfaction</div>
-            </div>
+          <h2>What Makes Us Different</h2>
+          <div className="differentiators-grid">
+            {differentiators.map((item, index) => (
+              <div key={index} className="differentiator-card">
+                <div className="diff-icon">{item.icon}</div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* Expertise Section */}
-      <section className="expertise-section">
+      {/* Our Expertise */}
+      <section className="our-expertise">
         <div className="container">
-          <h2>Our Expertise</h2>
+          <div className="expertise-header">
+            <h2>Our Expertise</h2>
+            <p>
+              At TechHubbix, we design, develop, and optimize scalable digital systems that drive measurable business growth. Our approach combines technical excellence, strategic automation, and performance marketing to deliver long-term results — not just short-term fixes.
+            </p>
+          </div>
           <div className="expertise-grid">
-            <div className="expertise-card">
-              <h3>🔧 Full Stack Development</h3>
-              <p>End-to-end web and application development using modern technologies and best practices.</p>
-            </div>
-            <div className="expertise-card">
-              <h3>🔗 HubSpot Solutions</h3>
-              <p>Custom HubSpot CRM setup, automation, and integration services to streamline your processes.</p>
-            </div>
-            <div className="expertise-card">
-              <h3>🎨 Design & Themes</h3>
-              <p>Professional website design and custom theme development aligned with your brand identity.</p>
-            </div>
-            <div className="expertise-card">
-              <h3>🛒 E-Commerce</h3>
-              <p>Shopify and WooCommerce solutions designed to maximize conversions and sales.</p>
-            </div>
-            <div className="expertise-card">
-              <h3>📊 Digital Marketing</h3>
-              <p>Strategic digital marketing campaigns to increase visibility, traffic, and business growth.</p>
-            </div>
-            <div className="expertise-card">
-              <h3>⚙️ Consultation</h3>
-              <p>Expert advice on technology stack selection, architecture, and digital transformation.</p>
-            </div>
+            {expertise.map((item, index) => (
+              <div key={index} className="expertise-card">
+                <div className="expertise-icon">{item.icon}</div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="team-section">
-        <div className="container">
-          <h2>Our Team</h2>
-          <p className="team-intro">
-            We're a passionate team of developers, designers, and strategists united by a common goal: 
-            delivering exceptional digital solutions.
-          </p>
-          <div className="team-grid">
-            <div className="team-member">
-              <div className="member-avatar">👨‍💼</div>
-              <h3 className='member-names'>John Smith</h3>
-              <p className="member-role">Founder & Lead Developer</p>
-              <p className="member-bio">Full stack expert with 8+ years of experience in web development.</p>
-            </div>
-            <div className="team-member">
-              <div className="member-avatar">👩‍💻</div>
-              <h3 className='member-names'>Sarah Johnson</h3>
-              <p className="member-role">Creative Director</p>
-              <p className="member-bio">Design specialist creating beautiful, functional user experiences.</p>
-            </div>
-            <div className="team-member">
-              <div className="member-avatar">👨‍🔧</div>
-              <h3 className='member-names'>Michael Chen</h3>
-              <p className="member-role">HubSpot Specialist</p>
-              <p className="member-bio">Expert in CRM automation and marketing integration solutions.</p>
-            </div>
-            <div className="team-member">
-              <div className="member-avatar">👩‍📊</div>
-              <h3 className='member-names'>Emma Williams</h3>
-              <p className="member-role">Digital Marketing Strategist</p>
-              <p className="member-bio">Data-driven marketer focused on measurable business growth.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Work With Us */}
-      <section className="why-us-section">
+      {/* Why Work With TechHubbix */}
+      <section className="why-work-with-us">
         <div className="container">
           <h2>Why Work With TechHubbix?</h2>
-          <div className="why-us-grid">
-            <div className="why-us-card">
-              <div className="why-us-icon">✓</div>
-              <h3>Proven Track Record</h3>
-              <p>Years of experience delivering successful projects across diverse industries and scales.</p>
-            </div>
-            <div className="why-us-card">
-              <div className="why-us-icon">✓</div>
-              <h3>Comprehensive Services</h3>
-              <p>One-stop solution for all your digital needs - from development to marketing.</p>
-            </div>
-            <div className="why-us-card">
-              <div className="why-us-icon">✓</div>
-              <h3>Expert Team</h3>
-              <p>Skilled professionals with deep expertise in latest technologies and industry practices.</p>
-            </div>
-            <div className="why-us-card">
-              <div className="why-us-icon">✓</div>
-              <h3>Client-Focused Approach</h3>
-              <p>Your success is our priority. We invest in understanding your unique business goals.</p>
-            </div>
-            <div className="why-us-card">
-              <div className="why-us-icon">✓</div>
-              <h3>Quality Assurance</h3>
-              <p>Rigorous testing and quality processes ensuring excellence in every deliverable.</p>
-            </div>
-            <div className="why-us-card">
-              <div className="why-us-icon">✓</div>
-              <h3>Ongoing Support</h3>
-              <p>Dedicated post-launch support and maintenance to ensure continued success.</p>
-            </div>
+          <p className="why-intro">
+            Choosing the right technology partner is critical to your business growth. At TechHubbix, we combine strategic thinking, technical excellence, and performance-driven execution to deliver solutions that create real impact.
+          </p>
+          <div className="reasons-grid">
+            {reasons.map((reason, index) => (
+              <div key={index} className="reason-card">
+                <div className="reason-number">✓</div>
+                <h3>{reason.title}</h3>
+                <p>{reason.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -231,9 +227,15 @@ const About = () => {
       {/* CTA Section */}
       <section className="about-cta">
         <div className="container">
-          <h2>Ready to Work Together?</h2>
-          <p>Let's discuss how we can help transform your business digitally.</p>
-          <button onClick={() => navigate("/contact")} className="cta-button">Get in Touch</button>
+          <h2>Ready to Transform Your Digital Presence?</h2>
+          <p>Partner with TechHubbix and unlock scalable technology solutions built for performance, automation, and revenue growth.</p>
+          <p className="cta-tagline">Your next phase of growth starts with a single conversation.</p>
+          <button 
+            className="cta-button"
+            onClick={() => navigate('/contact')}
+          >
+            🚀 Schedule Your Consultation Today
+          </button>
         </div>
       </section>
     </div>

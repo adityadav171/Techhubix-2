@@ -10,24 +10,24 @@ const AboutSection = () => {
   const navigate = useNavigate();
   const features = [
     {
-      icon: "fas fa-bolt",
-      title: "Fast Delivery",
-      description: "Quick turnaround, quality assured",
+      icon: "🚀",
+      title: "Fast & Agile Execution",
+      description: "Lean development process ensuring rapid delivery without compromising quality."
     },
     {
-      icon: "fas fa-shield-alt",
-      title: "Quality Assurance",
-      description: "Thoroughly tested and secure solutions",
+      icon: "🔐",
+      title: "Enterprise-Grade Security",
+      description: "Every solution is built with modern security standards and rigorous testing."
     },
     {
-      icon: "fas fa-users",
-      title: "Expert Team",
-      description: "Experienced blockchain developers",
+      icon: "👨‍💻",
+      title: "Experienced Specialists",
+      description: "Developers, CRM consultants, and marketing strategists aligned toward performance."
     },
     {
-      icon: "fas fa-headset",
-      title: "24/7 Support",
-      description: "Always here to help you succeed",
+      icon: "📞",
+      title: "Dedicated Ongoing Support",
+      description: "Post-launch monitoring, maintenance, and growth optimization."
     },
   ];
 
@@ -39,39 +39,42 @@ const AboutSection = () => {
             <img
               decoding="async"
               src="https://img.freepik.com/premium-vector/about-us_773186-1364.jpg"
-              alt="Array Blocks Team"
+              alt="TechHubbix Team"
             />
           </div>
 
           <div className="about-right-h">
             <h2>
-              Let's <span className="gradient-text-h">Build !</span>
+              Your Strategic <span className="gradient-text-h">Technology Partner</span>
             </h2>
             <p>
-              We are a premier software development company specializing in HubSpot development, full-stack applications, Shopify stores, and digital marketing solutions.
+              At TechHubbix, we don't just build websites — we build scalable digital infrastructures that power long-term growth.
             </p>
             <p>
-             Our mission is to deliver innovative, secure, and scalable digital solutions that help businesses grow and stay ahead in the competitive digital landscape.
+              Our team combines engineering expertise, CRM automation, and growth marketing to create integrated systems that increase efficiency, improve customer acquisition, and maximize ROI.
             </p>
             <p>
-              From strategy to deployment, we build high-performance products engineered for reliability, growth, and long-term success.
+              From strategy to deployment and ongoing optimization, we operate as an extension of your team.
             </p>
             <button onClick={() => navigate("/projects")} className="dm-btn-primary-h">
-              View Demo
+              View Our Work
             </button>
           </div>
         </div>
 
         <div className="about-features-h">
-          {features.map((feature, index) => (
-            <div key={index} className="feature-item-h">
-              <h4>
-                <i className={`${feature.icon} gradient-text-h`}></i>{" "}
-                {feature.title}
-              </h4>
-              <p>{feature.description}</p>
-            </div>
-          ))}
+          <h3 className="features-title">Why Choose Us</h3>
+          <div className="features-grid">
+            {features.map((feature, index) => (
+              <div key={index} className="feature-item-h">
+                <h4>
+                  <span className="feature-emoji">{feature.icon}</span>
+                  {feature.title}
+                </h4>
+                <p>{feature.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

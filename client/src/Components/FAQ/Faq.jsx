@@ -3,39 +3,39 @@ import "./Faq.css"; // your existing CSS
 
 const faqsData = [
   {
-    question: "What services does TechHubbix offer?",
+    question: "What industries do you work with?",
     answer:
-      "TechHubbix specializes in HubSpot development, full-stack web applications, Shopify store development, CRM automation, and data-driven digital marketing solutions.",
+      "We work with startups, SaaS companies, eCommerce brands, agencies, and growing businesses across the US, UK, and international markets. Our expertise spans fintech, healthcare, retail, and B2B sectors.",
   },
   {
-    question: "Do you provide custom software development?",
+    question: "Do you work with international clients?",
     answer:
-      "Yes. We build scalable and secure custom web applications tailored to your business needs using modern full-stack technologies.",
+      "Yes. We serve clients globally and operate across multiple time zones. We have experience working with US, UK, and international businesses with proven track records of successful delivery.",
   },
   {
-    question: "Can TechHubbix help with HubSpot CRM setup and automation?",
+    question: "How do you ensure project quality?",
     answer:
-      "Absolutely. We provide complete HubSpot setup, custom integrations, workflow automation, sales pipeline optimization, and marketing automation services.",
+      "We follow agile development methodologies, conduct thorough QA testing, and maintain transparent communication throughout the project lifecycle. Every project undergoes rigorous quality assurance before launch.",
   },
   {
-    question: "Do you develop and optimize Shopify stores?",
+    question: "Do you offer ongoing marketing and technical support?",
     answer:
-      "Yes. We design, develop, and optimize high-converting Shopify stores, including custom themes, app integrations, and performance enhancements.",
+      "Yes. We provide long-term maintenance, optimization, and performance marketing services. Our team offers 24/7 support, monitoring, and growth optimization after project launch.",
   },
   {
-    question: "Do you offer digital marketing services?",
+    question: "What is your typical project timeline?",
     answer:
-      "Yes. Our digital marketing services include SEO, paid advertising, social media marketing, lead generation, and conversion optimization strategies.",
+      "Project timelines vary based on scope. Website packages typically take 2-4 weeks, custom development projects 6-12 weeks, and eCommerce solutions 4-8 weeks. We provide a detailed timeline during the consultation phase.",
   },
   {
-    question: "How long does a typical project take?",
+    question: "Can TechHubbix provide HubSpot CRM setup and automation?",
     answer:
-      "Project timelines depend on scope and complexity. Small websites may take 2–4 weeks, while larger full-stack or eCommerce projects can take 6–10 weeks. We provide a detailed timeline after consultation.",
+      "Absolutely. We provide complete HubSpot setup, workflow automation, pipeline optimization, reporting dashboards, and API integrations to streamline your sales process.",
   },
   {
-    question: "Do you provide post-launch support?",
+    question: "Do you develop high-converting Shopify stores?",
     answer:
-      "Yes. TechHubbix offers ongoing maintenance, performance optimization, and 24/7 support to ensure your digital products run smoothly after launch.",
+      "Yes. We design, develop, and optimize high-converting Shopify stores with custom themes, app integrations, payment solutions, and performance optimization for maximum revenue.",
   },
 ];
 

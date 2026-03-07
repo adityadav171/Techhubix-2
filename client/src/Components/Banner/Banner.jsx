@@ -3,11 +3,11 @@ import "./Banner.css";
 import { useNavigate } from "react-router-dom";
 
 const words = [
-  "Full-stack Development",
-  "HubSpot Development",
-  "Shopify Development",
-  "Digital Marketing",
-  "SEO Services",
+  "Full-Stack Development",
+  "HubSpot CRM Solutions",
+  "Shopify eCommerce",
+  "Performance Marketing",
+  "SEO & Lead Generation",
 ];
 
 const HeroSection = () => {
@@ -46,9 +46,9 @@ const HeroSection = () => {
       <div className="dm-container-h">
         <div className="dm-left-h">
           <h1>
-            TechHubBix Offers
+            Technology That Scales.
             <br />
-            Solutions For
+            Marketing That
             <br />
             <span className="typewriter-h">
               {text}
@@ -57,7 +57,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="dm-desc-h">
-          We provide custom software development and scalable digital solutions tailored to your business needs. We combine smart development with data-driven digital marketing to help brands grow, optimize performance, and scale efficiently.
+            TechHubbix is a global digital solutions partner specializing in full-stack development, HubSpot CRM implementation, Shopify eCommerce, and performance-driven digital marketing. We help startups and growing businesses in the US, UK, and worldwide build scalable systems that increase revenue and drive measurable growth.
           </p>
 
           {/* <div className="dm-rating-h">
@@ -105,15 +105,24 @@ const HeroSection = () => {
               className="dm-btn-primary-h"
               onClick={() =>navigate("/contact")}
             >
-              Get Free Site Audit
+              🚀 Book a Free Strategy Call
+            </button>
+            <button
+              type="button"
+              className="dm-btn-secondary-h"
+              onClick={() =>navigate("/contact")}
+            >
+              📊 Get a Free Website Audit
             </button>
           </div>
         </div>
 
+
+
         <div className="dm-right-h">
           <div className="dm-img-card-h">
             <img
-              src="/banner_img1.png"
+              src=""
               alt="Digital Marketing"
               decoding="async"
             />

@@ -7,10 +7,10 @@ export const servicesData = [
   {
     id: 1,
     slug: 'full-stack-development',
-    title: 'Full Stack Development',
-    shortDescription: 'Scalable web applications built with modern technologies',
+    title: 'Full-Stack Web Development',
+    shortDescription: 'Custom web applications built with modern frameworks (React, Node.js, cloud architecture) designed for speed, security, and scalability.',
     description:
-      'We build secure, high-performance, and scalable web applications tailored to your business goals using modern frontend and backend technologies.',
+      'Custom web applications built with modern frameworks (React, Node.js, cloud architecture) designed for speed, security, and scalability.',
     icon: '💻',
     category: 'Development',
     technologies: ['React', 'Node.js', 'MongoDB', 'PostgreSQL', 'Express', 'Next.js'],
@@ -38,10 +38,10 @@ export const servicesData = [
   {
     id: 2,
     slug: 'hubspot-development',
-    title: 'HubSpot Development',
-    shortDescription: 'CRM setup, automation, and custom HubSpot solutions',
+    title: 'HubSpot CRM Development & Automation',
+    shortDescription: 'Complete HubSpot CRM setup, workflow automation, pipeline optimization, reporting dashboards, and API integrations to streamline your sales process.',
     description:
-      'We help businesses maximize HubSpot with CRM setup, workflow automation, custom integrations, and marketing optimization strategies.',
+      'Complete HubSpot CRM setup, workflow automation, pipeline optimization, reporting dashboards, and API integrations to streamline your sales process.',
     icon: '⚙️',
     category: 'Development',
     technologies: ['HubSpot CRM', 'HubL', 'Marketing Automation', 'API Integrations'],
@@ -69,10 +69,10 @@ export const servicesData = [
   {
     id: 3,
     slug: 'shopify-development',
-    title: 'Shopify Development',
-    shortDescription: 'High-converting Shopify stores built for growth',
+    title: 'Shopify eCommerce Development',
+    shortDescription: 'High-converting Shopify stores optimized for performance, user experience, and revenue growth. Includes theme customization, payment integration, and speed optimization.',
     description:
-      'We design and develop conversion-focused Shopify stores with custom themes, app integrations, and performance optimization.',
+      'High-converting Shopify stores optimized for performance, user experience, and revenue growth. Includes theme customization, payment integration, and speed optimization.',
     icon: '🛍️',
     category: 'Development',
     technologies: ['Shopify', 'Liquid', 'Shopify Apps', 'JavaScript', 'HTML/CSS'],
@@ -100,10 +100,10 @@ export const servicesData = [
   {
     id: 4,
     slug: 'seo-services',
-    title: 'SEO Services',
-    shortDescription: 'Improve rankings and drive organic traffic',
+    title: 'SEO & Growth Marketing',
+    shortDescription: 'Technical SEO, on-page optimization, authority building, and content strategies to rank higher on Google and drive organic traffic.',
     description:
-      'Our data-driven SEO strategies improve search rankings, increase organic traffic, and deliver measurable business growth.',
+      'Technical SEO, on-page optimization, authority building, and content strategies to rank higher on Google and drive organic traffic.',
     icon: '🔍',
     category: 'Marketing',
     technologies: ['SEO Tools', 'Google Analytics', 'Search Console', 'Keyword Research Tools'],
@@ -130,10 +130,10 @@ export const servicesData = [
   {
     id: 5,
     slug: 'digital-marketing',
-    title: 'Digital Marketing',
-    shortDescription: 'Performance-driven marketing campaigns',
+    title: 'Performance Digital Marketing',
+    shortDescription: 'Google Ads, Meta Ads, LinkedIn Ads, lead generation funnels, email automation, and ROI-focused campaigns built to scale profitably.',
     description:
-      'We create and manage strategic digital marketing campaigns to generate leads, increase brand awareness, and maximize ROI.',
+      'Google Ads, Meta Ads, LinkedIn Ads, lead generation funnels, email automation, and ROI-focused campaigns built to scale profitably.',
     icon: '📢',
     category: 'Marketing',
     technologies: ['Google Ads', 'Meta Ads', 'Email Marketing', 'Analytics'],
