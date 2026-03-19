@@ -4,8 +4,6 @@
   margin: 0 auto;
 }
 
-
-
 .about-container-h {
   display: flex;
   gap: 60px;
@@ -22,8 +20,9 @@
   border-radius: 16px;
   box-shadow: var(--shadow-lg);
   border: 2px solid transparent;
-  background: linear-gradient(var(--white), var(--white)) padding-box,
-              linear-gradient(135deg, var(--primary), var(--tertiary)) border-box;
+  background:
+    linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(135deg, var(--primary), var(--tertiary)) border-box;
   height: auto;
   max-width: 100%;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,7 +63,6 @@
   border: none;
   cursor: pointer;
   box-shadow: var(--shadow-md);
-  margin-top: 15px;
 }
 
 .dm-btn-primary-h:hover {
@@ -113,7 +111,7 @@
 }
 
 .feature-item-h h4 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 12px;
   color: var(--dark);
@@ -122,6 +120,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  flex-direction: column;
 }
 
 .feature-emoji {

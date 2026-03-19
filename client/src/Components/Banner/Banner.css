@@ -1,8 +1,8 @@
 .dm-hero-section-h {
- 
   padding: 80px 40px;
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 
 .dm-container-h {
@@ -21,7 +21,7 @@
 }
 
 .dm-left-h h1 {
-  font-size: clamp(2rem, 8vw, 3.5rem);
+  font-size: 50px;
   font-weight: 700;
   color: var(--dark);
   line-height: 1.2;
@@ -66,20 +66,21 @@
 
 .dm-img-card-h img {
   width: 100%;
-  max-width: 550px;
+  max-width: 600px;
   padding: 8px;
   border-radius: 20px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: var(--shadow-lg);
-  border: 2px solid transparent;
-  background: linear-gradient(var(--white), var(--white)) padding-box,
-              linear-gradient(135deg, var(--primary), var(--tertiary)) border-box;
+  /* box-shadow: var(--shadow-lg);
+  border: 2px solid transparent; */
+  /* background:
+    linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(135deg, var(--primary), var(--tertiary)) border-box; */
 }
 
-.dm-img-card-h img:hover {
+/* .dm-img-card-h img:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-}
+} */
 
 .dm-rating-h {
   margin: 14px 0 25px;

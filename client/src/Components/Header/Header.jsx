@@ -27,7 +27,7 @@ const Header = () => {
    * Toggle services mega menu
    */
   const handleMenuToggle = () => {
-    logDebug('Services menu toggled');
+    logDebug("Services menu toggled");
     const menu = document.querySelector(".js-menu");
     if (menu) {
       menu.classList.toggle("active");
@@ -68,11 +68,9 @@ const Header = () => {
               {/* Services Menu with Mega Menu */}
               <li className="js-menu">
                 <Link to="/services">Services</Link>
-               
 
                 <div className="mega-menu services-mega">
                   <div className="services-column">
-                    <h4>Our Services</h4>
                     <ul>
                       <li>
                         <Link
@@ -124,22 +122,11 @@ const Header = () => {
                       </li>
                     </ul>
                   </div>
-
-                  <div className="mega-right">
-                    <h4>Explore</h4>
-                    <p>Check out our complete range of digital solutions for your business.</p>
-                    <Link
-                      to="/services"
-                      className="mega-cta"
-                    >
-                      View All Services →
-                    </Link>
-                  </div>
                 </div>
               </li>
 
               {/* Themes Menu with Mega Menu */}
-              <li className="js-menu">
+              {/* <li className="js-menu">
                 <Link to="/themes">Themes</Link>
 
                 <div className="mega-menu themes-mega">
@@ -199,16 +186,16 @@ const Header = () => {
 
                   <div className="mega-right">
                     <h4>Explore</h4>
-                    <p>Beautiful, responsive themes to elevate your online presence.</p>
-                    <Link
-                      to="/themes"
-                      className="mega-cta"
-                    >
+                    <p>
+                      Beautiful, responsive themes to elevate your online
+                      presence.
+                    </p>
+                    <Link to="/themes" className="mega-cta">
                       View All Themes →
                     </Link>
                   </div>
                 </div>
-              </li>
+              </li> */}
 
               {/* Projects Link */}
               {/* <li>
@@ -218,7 +205,7 @@ const Header = () => {
               {/* Blogs Link */}
               {/* <li>
                 <Link to="/blogs">Blog</Link>
-              </li> */} 
+              </li> */}
             </ul>
           </nav>
 
@@ -231,7 +218,7 @@ const Header = () => {
 
           {/* Mobile Menu Toggle */}
           <div className="mobile-menu-toggle">
-            <button 
+            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="menu-btn"
               aria-label="Toggle menu"
@@ -246,13 +233,37 @@ const Header = () => {
       {isMobileMenuOpen && (
         <nav className="mobile-menu">
           <ul>
-            <li><Link to="/" onClick={handleMenuClose}>Home</Link></li>
-            <li><Link to="/about" onClick={handleMenuClose}>About</Link></li>
-            <li><Link to="/services" onClick={handleMenuClose}>Services</Link></li>
-            <li><Link to="/themes" onClick={handleMenuClose}>Themes</Link></li>
+            <li>
+              <Link to="/" onClick={handleMenuClose}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={handleMenuClose}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/services" onClick={handleMenuClose}>
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/themes" onClick={handleMenuClose}>
+                Themes
+              </Link>
+            </li>
             {/* <li><Link to="/projects" onClick={handleMenuClose}>Projects</Link></li>
             <li><Link to="/blogs" onClick={handleMenuClose}>Blog</Link></li> */}
-            <li><Link to="/contact" onClick={handleMenuClose} className="contact-mobile-btn">Contact Us</Link></li>
+            <li>
+              <Link
+                to="/contact"
+                onClick={handleMenuClose}
+                className="contact-mobile-btn"
+              >
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </nav>
       )}

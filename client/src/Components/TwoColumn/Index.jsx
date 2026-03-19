@@ -1,6 +1,14 @@
 import React from "react";
 import "./Style.css";
 import { useNavigate } from "react-router-dom";
+// Fontawesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faRocket,
+  faShieldHalved,
+  faUserTie,
+  faHeadset,
+} from "@fortawesome/free-solid-svg-icons";
 
 const AboutSection = () => {
   const openPopup = () => {
@@ -10,24 +18,28 @@ const AboutSection = () => {
   const navigate = useNavigate();
   const features = [
     {
-      icon: "🚀",
+      icon: faRocket,
       title: "Fast & Agile Execution",
-      description: "Lean development process ensuring rapid delivery without compromising quality."
+      description:
+        "Lean development process ensuring rapid delivery without compromising quality.",
     },
     {
-      icon: "🔐",
+      icon: faShieldHalved,
       title: "Enterprise-Grade Security",
-      description: "Every solution is built with modern security standards and rigorous testing."
+      description:
+        "Every solution is built with modern security standards and rigorous testing.",
     },
     {
-      icon: "👨‍💻",
+      icon: faUserTie,
       title: "Experienced Specialists",
-      description: "Developers, CRM consultants, and marketing strategists aligned toward performance."
+      description:
+        "Developers, CRM consultants, and marketing strategists aligned toward performance.",
     },
     {
-      icon: "📞",
+      icon: faHeadset,
       title: "Dedicated Ongoing Support",
-      description: "Post-launch monitoring, maintenance, and growth optimization."
+      description:
+        "Post-launch monitoring, maintenance, and growth optimization.",
     },
   ];
 
@@ -45,18 +57,26 @@ const AboutSection = () => {
 
           <div className="about-right-h">
             <h2>
-              Your Strategic <span className="gradient-text-h">Technology Partner</span>
+              Your Strategic{" "}
+              <span className="gradient-text-h">Technology Partner</span>
             </h2>
             <p>
-              At TechHubbix, we don't just build websites — we build scalable digital infrastructures that power long-term growth.
+              At TechHubbix, we don't just build websites — we build scalable
+              digital infrastructures that power long-term growth.
             </p>
             <p>
-              Our team combines engineering expertise, CRM automation, and growth marketing to create integrated systems that increase efficiency, improve customer acquisition, and maximize ROI.
+              Our team combines engineering expertise, CRM automation, and
+              growth marketing to create integrated systems that increase
+              efficiency, improve customer acquisition, and maximize ROI.
             </p>
             <p>
-              From strategy to deployment and ongoing optimization, we operate as an extension of your team.
+              From strategy to deployment and ongoing optimization, we operate
+              as an extension of your team.
             </p>
-            <button onClick={() => navigate("/projects")} className="dm-btn-primary-h">
+            <button
+              onClick={() => navigate("/projects")}
+              className="dm-btn-primary-h"
+            >
               View Our Work
             </button>
           </div>
@@ -68,7 +88,9 @@ const AboutSection = () => {
             {features.map((feature, index) => (
               <div key={index} className="feature-item-h">
                 <h4>
-                  <span className="feature-emoji">{feature.icon}</span>
+                  <span className="feature-emoji">
+                    <FontAwesomeIcon icon={feature.icon} />
+                  </span>
                   {feature.title}
                 </h4>
                 <p>{feature.description}</p>

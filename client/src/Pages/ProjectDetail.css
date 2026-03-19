@@ -52,6 +52,7 @@
 .meta-item {
   font-size: 14px;
   opacity: 0.95;
+  width: 33.33%;
 }
 
 .meta-item strong {

@@ -22,6 +22,9 @@ import ProjectDetail from "./Pages/ProjectDetail";
 import Blogs from "./Pages/Blogs";
 import BlogDetail from "./Pages/BlogDetail";
 import Contact from "./Pages/Contact";
+import TermsAndCondition from "./Pages/TermsAndCondition";
+
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 // Global Animations CSS
 import "./styles/animations.css";
@@ -69,6 +72,9 @@ const App = () => {
 
         {/* Fallback Route */}
         <Route path="*" element={<Home />} />
+
+        <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
 
       {/* Footer */}

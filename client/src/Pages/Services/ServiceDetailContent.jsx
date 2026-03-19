@@ -15,8 +15,6 @@ const servicesData = [
     slug: "website-development",
     title: "Website Development & Maintenance Services",
     subtitle: "Build Your Dream Website With Us",
-    image:
-      "https://arrayblocks.net/wp-content/uploads/al_opt_content/IMAGE/www.q5infotech.com//wp-content/uploads/2020/09/website-design-and-development.png.bv.webp",
     description:
       "We create powerful, modern, and high-performance websites that help your business grow online. From design to development and ongoing support — we handle everything professionally.",
 

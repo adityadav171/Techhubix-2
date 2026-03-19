@@ -4,10 +4,11 @@
   padding: 80px 20px;
   position: relative;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .high-converting-cta-section::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 400px;
   height: 400px;
@@ -19,7 +20,7 @@
 }
 
 .high-converting-cta-section::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 300px;
   height: 300px;

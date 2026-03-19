@@ -26,29 +26,12 @@ const Footer = () => {
               Tech<span>Hubbix</span>
             </div>
             <p className="footer-description">
-              TechHubbix is a global digital solutions partner specializing in full-stack development, HubSpot CRM implementation, Shopify eCommerce, and performance-driven digital marketing. We help startups and growing businesses scale smarter.
+              TechHubbix is a global digital solutions partner specializing in
+              full-stack development, HubSpot CRM implementation, Shopify
+              eCommerce, and performance-driven digital marketing. We help
+              startups and growing businesses scale smarter.
             </p>
             <div className="footer-social">
-              {/* Facebook - Commented Out */}
-              {/* <a
-                href="https://www.facebook.com/profile.php?id=61582786569261"
-                className="social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faFacebookF} />
-              </a> */}
-              
-              {/* Twitter - Commented Out */}
-              {/* <a
-                href="https://x.com/ArrayBlocksNet"
-                className="social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faTwitter} />
-              </a> */}
-              
               <a
                 href="https://www.linkedin.com/in/the-techhubbix-web-app-development-for-startups-09125b38a/"
                 className="social-icon"
@@ -105,14 +88,6 @@ const Footer = () => {
                   Shopify eCommerce
                 </Link>
               </li>
-              <li>
-                <Link to="/services/seo-services">SEO & Growth Marketing</Link>
-              </li>
-              <li>
-                <Link to="/services/digital-marketing">
-                  Performance Digital Marketing
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -122,11 +97,7 @@ const Footer = () => {
             <ul className="footer-links contact-list">
               <li>
                 <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-                <a href="mailto:info@techhubbix.com">contact@techhubbix.com</a>
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-                <a href="mailto:sales@techhubbix.com">sales@techhubbix.com</a>
+                <a href="mailto:info@techhubbix.com">info@techhubbix.com</a>
               </li>
               <li>
                 <FontAwesomeIcon icon={faPhone} className="contact-icon" />
@@ -143,17 +114,10 @@ const Footer = () => {
           </p>
           <ul className="footer-bottom-links">
             <li>
-              <a href="https://arrayblocks.net/privacy-policy/">
-                Privacy Policy
-              </a>
+              <a href="/privacy-policy">Privacy Policy</a>
             </li>
             <li>
-              <a href="https://arrayblocks.net/terms-conditions/">
-                Terms of Service
-              </a>
-            </li>
-            <li>
-              <a href="https://arrayblocks.net/cookie-policy/">Cookie Policy</a>
+              <a href="/terms-and-conditions">Terms of Service</a>
             </li>
           </ul>
         </div>

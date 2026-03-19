@@ -2,9 +2,9 @@ import React from "react";
 import "./services.css";
 import { Link } from "react-router-dom";
 import { servicesData } from "../../data/servicesData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // ✅ ADD THIS
 
 const Services = () => {
-  // Display all services
   const filteredServices = servicesData;
 
   return (
@@ -13,7 +13,8 @@ const Services = () => {
         Our <span>Expertise</span>
       </h2>
       <p className="section-subtitle-h">
-        We combine technology, automation, and marketing intelligence to build scalable digital ecosystems.
+        We combine technology, automation, and marketing intelligence to build
+        scalable digital ecosystems.
       </p>
 
       <div className="services-container-h">
@@ -23,9 +24,11 @@ const Services = () => {
             to={`/services/${service.slug}`}
             className="service-item-h"
           >
+            {/* ✅ FIX HERE */}
             <div className="service-icon-h">
-              {service.icon}
+              <FontAwesomeIcon icon={service.icon} size="2x" />
             </div>
+
             <h4>{service.title}</h4>
             <p>{service.shortDescription}</p>
             <span className="service-link">Learn More →</span>

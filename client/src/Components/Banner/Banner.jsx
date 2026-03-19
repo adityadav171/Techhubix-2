@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Banner.css";
 import { useNavigate } from "react-router-dom";
+import bannerImage from "../../assets/bannerImage.webp";
 
 const words = [
   "Full-Stack Development",
   "HubSpot CRM Solutions",
   "Shopify eCommerce",
-  "Performance Marketing",
-  "SEO & Lead Generation",
+  // "Performance Marketing",
+  // "SEO & Lead Generation",
 ];
 
 const HeroSection = () => {
@@ -57,75 +58,34 @@ const HeroSection = () => {
           </h1>
 
           <p className="dm-desc-h">
-            TechHubbix is a global digital solutions partner specializing in full-stack development, HubSpot CRM implementation, Shopify eCommerce, and performance-driven digital marketing. We help startups and growing businesses in the US, UK, and worldwide build scalable systems that increase revenue and drive measurable growth.
+            TechHubbix is a global digital solutions partner specializing in
+            full-stack development, HubSpot CRM implementation, Shopify
+            eCommerce, and performance-driven digital marketing. We help
+            startups and growing businesses in the US, UK, and worldwide build
+            scalable systems that increase revenue and drive measurable growth.
           </p>
-
-          {/* <div className="dm-rating-h">
-            <img
-              draggable="false"
-              role="img"
-              className="emoji"
-              alt="⭐"
-              src="https://s.w.org/images/core/emoji/17.0.2/svg/2b50.svg"
-            />
-            <img
-              draggable="false"
-              role="img"
-              className="emoji"
-              alt="⭐"
-              src="https://s.w.org/images/core/emoji/17.0.2/svg/2b50.svg"
-            />
-            <img
-              draggable="false"
-              role="img"
-              className="emoji"
-              alt="⭐"
-              src="https://s.w.org/images/core/emoji/17.0.2/svg/2b50.svg"
-            />
-            <img
-              draggable="false"
-              role="img"
-              className="emoji"
-              alt="⭐"
-              src="https://s.w.org/images/core/emoji/17.0.2/svg/2b50.svg"
-            />
-            <img
-              draggable="false"
-              role="img"
-              className="emoji"
-              alt="⭐"
-              src="https://s.w.org/images/core/emoji/17.0.2/svg/2b50.svg"
-            />
-            <span>4.9/5 Rating • 120+ Reviews</span>
-          </div> */}
 
           <div className="dm-buttons-h">
             <button
               type="button"
               className="dm-btn-primary-h"
-              onClick={() =>navigate("/contact")}
+              onClick={() => navigate("/contact")}
             >
-              🚀 Book a Free Strategy Call
+              Book a Free Strategy Call
             </button>
             <button
               type="button"
               className="dm-btn-secondary-h"
-              onClick={() =>navigate("/contact")}
+              onClick={() => navigate("/contact")}
             >
-              📊 Get a Free Website Audit
+              Get a Free Website Audit
             </button>
           </div>
         </div>
 
-
-
         <div className="dm-right-h">
           <div className="dm-img-card-h">
-            <img
-              src="/banner_img1.png"
-              alt="Digital Marketing"
-              decoding="async"
-            />
+            <img src={bannerImage} alt="Digital Marketing" decoding="async" />
           </div>
         </div>
       </div>

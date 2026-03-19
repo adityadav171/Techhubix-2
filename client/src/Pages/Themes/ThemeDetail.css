@@ -10,15 +10,20 @@
 
 /* Header Section */
 .theme-header {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: none;
   color: white;
-  padding: clamp(40px, 8vw, 80px) 20px;
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
 
+.theme-detail-page .theme-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  padding: 20px 20px 40px;
+}
+
 .theme-header:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -55,14 +60,14 @@
 }
 
 .theme-icon-large {
-  font-size: 80px;
+  font-size: 50px;
   display: block;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   animation: bounce 2s ease-in-out infinite;
 }
 
 .theme-main-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 700;
   margin: 0 0 15px 0;
@@ -139,15 +144,16 @@
 
 .overview-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 50px;
   align-items: start;
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .overview-content h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.8rem, 4vw, 2.4rem);
   font-weight: 700;
   color: var(--dark);
@@ -163,7 +169,7 @@
 
 .theme-meta {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 16px;
   padding: 20px 0;
 }
@@ -187,7 +193,11 @@
 }
 
 .overview-cta {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05) 0%,
+    rgba(236, 72, 153, 0.05) 100%
+  );
   padding: 40px 30px;
   border-radius: 15px;
   border: 2px solid var(--primary);
@@ -195,7 +205,7 @@
 }
 
 .overview-cta h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--dark);
@@ -255,7 +265,7 @@
 }
 
 .section-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.8rem, 5vw, 2.4rem);
   font-weight: 700;
   text-align: center;
@@ -319,7 +329,11 @@
 }
 
 .feature-box {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05) 0%,
+    rgba(236, 72, 153, 0.05) 100%
+  );
   padding: 25px;
   border-radius: 12px;
   border-left: 4px solid var(--primary);
@@ -339,7 +353,7 @@
 }
 
 .feature-box h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: var(--dark);
@@ -377,7 +391,7 @@
 }
 
 .spec-card h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--dark);
@@ -415,7 +429,7 @@
   font-weight: 500;
   color: var(--gray-600);
   text-align: center;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 
 .fonts-list {
@@ -462,7 +476,7 @@
 }
 
 .theme-cta-section:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -480,7 +494,7 @@
 }
 
 .cta-box h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.8rem, 5vw, 2.4rem);
   font-weight: 700;
   margin: 0 0 15px 0;

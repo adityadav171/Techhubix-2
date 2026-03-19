@@ -1,7 +1,6 @@
 /* Pricing Section */
 .pricing-section {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .pricing-container {
@@ -39,7 +38,9 @@
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -136,7 +137,9 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .cta-button:hover {
@@ -152,7 +155,9 @@
   color: #555;
   font-size: 14px;
 }
-
+.pricing-footer p {
+  color: #000;
+}
 /* Responsive */
 @media (max-width: 1024px) {
   .pricing-card.highlighted {

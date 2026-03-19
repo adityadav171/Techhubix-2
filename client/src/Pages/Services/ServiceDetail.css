@@ -36,14 +36,18 @@
 }
 
 .service-icon-large {
-  font-size: 80px;
-  margin-bottom: 20px;
+  font-size: 50px;
   animation: bounce 2s ease-in-out;
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .service-main-title {
@@ -52,7 +56,7 @@
   margin: 0 0 20px 0;
   line-height: 1.2;
   animation: slideUp 0.6s ease;
-  color:#fff;
+  color: #fff;
 }
 
 .service-tagline {
@@ -60,7 +64,7 @@
   opacity: 0.95;
   margin: 0;
   animation: slideUp 0.6s ease 0.1s backwards;
-  color:#fff;
+  color: #fff;
 }
 
 /* Overview Section */
@@ -307,13 +311,10 @@
   text-align: center;
 }
 
-
-
 .process-step {
   display: flex;
   gap: 30px;
   position: relative;
- 
 }
 
 .step-number {
@@ -350,8 +351,6 @@
   height: calc(100% + 40px);
   background: #e0e0e0;
 }
-
-
 
 .process-step:last-child .step-connector {
   display: none;
@@ -398,8 +397,18 @@
 }
 
 .why-icon {
-  font-size: 48px;
-  margin-bottom: 16px;
+  font-size: 20px;
+  margin-bottom: 18px;
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  line-height: 1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 700;
 }
 
 .why-card h3 {
@@ -425,7 +434,7 @@
 }
 
 .service-bottom-cta .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 

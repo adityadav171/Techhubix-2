@@ -3,11 +3,11 @@
  * Displays comprehensive service information, features, and process
  */
 
-import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { logInfo, logError } from '../../utils/logger';
-import { getServiceBySlug } from '../../data/servicesData';
-import './ServiceDetail.css';
+import React, { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { logInfo, logError } from "../../utils/logger";
+import { getServiceBySlug } from "../../data/servicesData";
+import "./ServiceDetail.css";
 
 /**
  * ServiceDetails - Individual service detail page
@@ -25,10 +25,10 @@ const ServiceDetails = () => {
 
   useEffect(() => {
     if (service) {
-      logInfo('Service detail page loaded', { serviceSlug: slug });
+      logInfo("Service detail page loaded", { serviceSlug: slug });
       window.scrollTo(0, 0);
     } else {
-      logError('Service not found', { slug });
+      logError("Service not found", { slug });
     }
   }, [slug, service]);
 
@@ -68,7 +68,7 @@ const ServiceDetails = () => {
             <div className="overview-content">
               <h2>About This Service</h2>
               <p>{service.description}</p>
-              <div className="service-meta">
+              {/* <div className="service-meta">
                 <div className="meta-item">
                   <span className="meta-label">Estimated Timeline:</span>
                   <span className="meta-value">{service.timeline}</span>
@@ -77,14 +77,14 @@ const ServiceDetails = () => {
                   <span className="meta-label">Pricing:</span>
                   <span className="meta-value">{service.pricing}</span>
                 </div>
-              </div>
+              </div> */}
             </div>
-            <div className="overview-cta">
+            {/* <div className="overview-cta">
               <h3>Ready to Get Started?</h3>
               <p>Contact us for a free consultation and project quote.</p>
               <button className="cta-btn">Start Your Project</button>
               <button className="cta-btn-secondary">Schedule a Call</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -145,7 +145,11 @@ const ServiceDetails = () => {
       {/* Why Choose Section */}
       <section className="why-choose">
         <div className="container">
-          <h2>{service.whyChooseReasons ? `Why Choose TechHubbix for ${service.title}?` : `Why Choose Us for ${service.title}?`}</h2>
+          <h2>
+            {service.whyChooseReasons
+              ? `Why Choose TechHubbix for ${service.title}?`
+              : `Why Choose Us for ${service.title}?`}
+          </h2>
           <div className="why-grid">
             {service.whyChooseReasons ? (
               service.whyChooseReasons.map((reason, index) => (
@@ -160,22 +164,34 @@ const ServiceDetails = () => {
                 <div className="why-card">
                   <div className="why-icon">🎯</div>
                   <h3>Expert Team</h3>
-                  <p>Experienced professionals with proven expertise in {service.category.toLowerCase()} services.</p>
+                  <p>
+                    Experienced professionals with proven expertise in{" "}
+                    {service.category.toLowerCase()} services.
+                  </p>
                 </div>
                 <div className="why-card">
                   <div className="why-icon">⚡</div>
                   <h3>Quality Assured</h3>
-                  <p>Rigorous testing and quality assurance processes ensure excellence in every project.</p>
+                  <p>
+                    Rigorous testing and quality assurance processes ensure
+                    excellence in every project.
+                  </p>
                 </div>
                 <div className="why-card">
                   <div className="why-icon">📈</div>
                   <h3>Results-Driven</h3>
-                  <p>We focus on measurable outcomes that positively impact your business growth.</p>
+                  <p>
+                    We focus on measurable outcomes that positively impact your
+                    business growth.
+                  </p>
                 </div>
                 <div className="why-card">
                   <div className="why-icon">🤝</div>
                   <h3>Client-Centric</h3>
-                  <p>Your success is our priority. We maintain transparent communication throughout the project.</p>
+                  <p>
+                    Your success is our priority. We maintain transparent
+                    communication throughout the project.
+                  </p>
                 </div>
               </>
             )}
@@ -194,7 +210,11 @@ const ServiceDetails = () => {
                 {service.customCTA.buttons.map((button, index) => (
                   <button
                     key={index}
-                    className={button.type === 'primary' ? 'btn-primary' : 'btn-secondary'}
+                    className={
+                      button.type === "primary"
+                        ? "btn-primary"
+                        : "btn-secondary"
+                    }
                   >
                     {button.label}
                   </button>

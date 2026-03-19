@@ -1,0 +1,24 @@
+.termsConditions {
+  max-width: 1000px;
+  margin: 50px auto 70px;
+}
+
+.termsConditions > *,
+.termsConditions p,
+.termsConditions h2 {
+  color: #000;
+}
+
+.termsConditions .mb-8 {
+  margin-bottom: 30px;
+}
+
+.termsConditions h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.termsConditions ul {
+  padding-left: 20px;
+  padding-top: 15px;
+}

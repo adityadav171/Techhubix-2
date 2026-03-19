@@ -3,11 +3,11 @@
  * Displays comprehensive theme information, features, screenshots, and specifications
  */
 
-import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { logInfo, logError } from '../../utils/logger';
-import { getThemeBySlug } from '../../data/themesData';
-import './ThemeDetail.css';
+import React, { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { logInfo, logError } from "../../utils/logger";
+import { getThemeBySlug } from "../../data/themesData";
+import "./ThemeDetail.css";
 
 /**
  * ThemeDetail - Individual theme detail page
@@ -24,10 +24,10 @@ const ThemeDetail = () => {
 
   useEffect(() => {
     if (theme) {
-      logInfo('Theme detail page loaded', { themeSlug: slug });
+      logInfo("Theme detail page loaded", { themeSlug: slug });
       window.scrollTo(0, 0);
     } else {
-      logError('Theme not found', { slug });
+      logError("Theme not found", { slug });
     }
   }, [slug, theme]);
 
@@ -99,15 +99,20 @@ const ThemeDetail = () => {
                 <div className="meta-item">
                   <span className="meta-label">Customizable:</span>
                   <span className="meta-value">
-                    {theme.specifications.customizable ? 'Yes' : 'No'}
+                    {theme.specifications.customizable ? "Yes" : "No"}
                   </span>
                 </div>
               </div>
             </div>
             <div className="overview-cta">
               <h3>Ready to Use This Theme?</h3>
-              <p>Get instant access to all features and start building your website.</p>
-              <Link to="/contact" className="cta-btn">Purchase Now</Link>
+              <p>
+                Get instant access to all features and start building your
+                website.
+              </p>
+              <Link to="/contact" className="cta-btn">
+                Purchase Now
+              </Link>
               <button className="cta-btn-secondary">View Live Demo</button>
             </div>
           </div>
@@ -149,59 +154,15 @@ const ThemeDetail = () => {
       </section>
 
       {/* Specifications Section */}
-      <section className="theme-specifications">
-        <div className="container">
-          <h2 className="section-title">Theme Specifications</h2>
-          <div className="specs-grid">
-            {/* Color Palette */}
-            <div className="spec-card">
-              <h3>Color Palette</h3>
-              <div className="color-palette">
-                {theme.specifications.colors.map((color, index) => (
-                  <div key={index} className="color-swatch">
-                    <div
-                      className="color-box"
-                      style={{ backgroundColor: color }}
-                      title={color}
-                    />
-                    <span className="color-code">{color}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Fonts */}
-            <div className="spec-card">
-              <h3>Typography</h3>
-              <ul className="fonts-list">
-                {theme.specifications.fonts.map((font, index) => (
-                  <li key={index}>
-                    <span style={{ fontFamily: font }}>{font}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Layout Details */}
-            <div className="spec-card">
-              <h3>Layouts & Options</h3>
-              <div className="spec-details">
-                <p><strong>{theme.specifications.layouts} Pre-built Layouts</strong></p>
-                <p>Fully <strong>Customizable</strong></p>
-                <p><strong>Responsive</strong> Design</p>
-                <p>Mobile <strong>Optimized</strong></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="theme-cta-section">
         <div className="container">
           <div className="cta-box">
             <h2>Get Started with {theme.title}</h2>
-            <p>Join thousands of satisfied customers using this premium theme</p>
+            <p>
+              Join thousands of satisfied customers using this premium theme
+            </p>
             <div className="cta-buttons">
               <Link to="/contact" className="btn-primary">
                 Purchase Theme

@@ -20,7 +20,7 @@
 }
 
 .about-hero:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@
 }
 
 .about-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 8vw, 3.5rem);
   font-weight: 700;
   margin: 0 0 20px 0;
@@ -75,7 +75,7 @@
 }
 
 .who-we-are h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 6vw, 2.8rem);
   font-weight: 700;
   color: var(--dark);
@@ -100,7 +100,11 @@
 
 /* Mission & Vision */
 .mission-vision {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05) 0%,
+    rgba(236, 72, 153, 0.05) 100%
+  );
   padding: clamp(60px, 10vw, 100px) 20px;
   border-bottom: 1px solid var(--gray-200);
 }
@@ -133,7 +137,7 @@
 
 .mission-card:before,
 .vision-card:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -185,14 +189,23 @@
   background: white;
   border-bottom: 1px solid var(--gray-200);
 }
+.diff-icon svg {
+  font-size: 48px;
+  margin-bottom: 20px;
+  fill: var(--primary);
+  transition: all 0.3s ease;
+}
 
+.diff-icon svg path {
+  fill: var(--primary);
+}
 .differentiators .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .differentiators h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 6vw, 2.8rem);
   font-weight: 700;
   color: var(--dark);
@@ -208,7 +221,11 @@
 }
 
 .differentiator-card {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(236, 72, 153, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05),
+    rgba(236, 72, 153, 0.05)
+  );
   padding: 35px;
   border-radius: 12px;
   border: 1px solid var(--gray-200);
@@ -221,7 +238,11 @@
   box-shadow: var(--shadow-lg);
   transform: translateY(-8px);
   border-color: var(--primary);
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.1),
+    rgba(236, 72, 153, 0.1)
+  );
 }
 
 .diff-icon {
@@ -247,7 +268,11 @@
 /* Our Expertise Section */
 .our-expertise {
   padding: clamp(60px, 10vw, 100px) 20px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05) 0%,
+    rgba(236, 72, 153, 0.05) 100%
+  );
   border-bottom: 1px solid var(--gray-200);
 }
 
@@ -265,7 +290,7 @@
 }
 
 .expertise-header h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 6vw, 2.8rem);
   font-weight: 700;
   color: var(--dark);
@@ -337,7 +362,7 @@
 }
 
 .why-work-with-us h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 6vw, 2.8rem);
   font-weight: 700;
   color: var(--dark);
@@ -363,7 +388,11 @@
 }
 
 .reason-card {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(236, 72, 153, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05),
+    rgba(236, 72, 153, 0.05)
+  );
   padding: 35px;
   border-radius: 12px;
   border-left: 4px solid var(--primary);
@@ -415,7 +444,7 @@
 }
 
 .about-cta:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -679,7 +708,7 @@
 .mission-card:before,
 .vision-card:before,
 .values-card:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -757,7 +786,7 @@
 }
 
 .about-stats:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -775,7 +804,7 @@
 }
 
 .about-stats h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 6vw, 2.8rem);
   font-weight: 700;
   text-align: center;
@@ -835,7 +864,7 @@
 }
 
 .expertise-section h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 6vw, 2.8rem);
   font-weight: 700;
   text-align: center;
@@ -845,7 +874,7 @@
 
 .expertise-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 30px;
 }
 
@@ -885,17 +914,21 @@
 }
 
 /* Team Section */
-.team-intro{
+.team-intro {
   padding-bottom: 10px;
   max-width: 100%;
   text-align: center;
   max-width: 700px;
-    margin: 0 auto 30px;
-    color:#000;
+  margin: 0 auto 30px;
+  color: #000;
 }
 .team-section {
   padding: clamp(60px, 10vw, 100px) 20px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05) 0%,
+    rgba(236, 72, 153, 0.05) 100%
+  );
 }
 
 .team-section .container {
@@ -904,7 +937,7 @@
 }
 
 .team-section h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 6vw, 2.8rem);
   font-weight: 700;
   text-align: center;
@@ -920,7 +953,7 @@
 
 .team-member {
   background: white;
-  padding:8px;
+  padding: 8px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -935,7 +968,11 @@
 
 .member-avatar {
   font-size: 4rem;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.1),
+    rgba(236, 72, 153, 0.1)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -949,11 +986,10 @@
 
 .member-names {
   text-align: center;
-  margin-top:10px;
+  margin-top: 10px;
   font-weight: 700;
   color: var(--dark);
   font-size: 1.1rem;
-  
 }
 
 .member-role {
@@ -970,7 +1006,7 @@
   color: var(--gray-600);
   font-size: 0.9rem;
   margin-top: 10px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   line-height: 1.5;
 }
 
@@ -987,7 +1023,7 @@
 }
 
 .why-choose h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 6vw, 2.8rem);
   font-weight: 700;
   text-align: center;
@@ -1003,7 +1039,11 @@
 
 .why-card {
   padding: 30px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(236, 72, 153, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05),
+    rgba(236, 72, 153, 0.05)
+  );
   border-radius: 12px;
   border-left: 4px solid var(--primary);
   transition: all 0.3s ease;
@@ -1044,7 +1084,7 @@
 }
 
 .about-cta:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1185,5 +1225,3 @@
     font-size: 0.95rem;
   }
 }
-
-
